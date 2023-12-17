@@ -1,0 +1,205 @@
+@import './logo.scss';
+@import './search.scss';
+
+$rightSideHeader: 773px;
+
+header {
+    border-bottom: 2px solid #DFE1E6;
+
+    input {
+        outline: none;
+        color: #8c8c8c !important;
+
+        &:placeholder {
+            color: #8c8c8c;
+            line-height: 32px !important;
+        }
+    }
+
+    // right-side------------------------------------------------------>
+    .right-side {
+        max-width: $rightSideHeader;
+
+        .logo {
+            @include logoHeader(mobile);
+        }
+
+        .search {
+            @include search-desktop();
+
+            .search-results {
+                @include searchResultbox();
+
+                .tag-name {
+                    @include tagName()
+                }
+            }
+
+        }
+    }
+
+    ;
+
+    // left-side------------------------------------------------------->
+    .let-side {
+        .line {
+            width: 1px;
+            height: 38px;
+            background: #DFE1E6;
+        }
+
+        .desktop {
+            button {
+                &:hover {
+                    svg path {
+                        stroke: #EE4562;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+
+            a {
+                &:hover {
+                    span {
+                        color: #EE4562;
+                        transition: all 0.3s;
+                    }
+
+                    svg path {
+                        fill: #EE4562;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+
+    ;
+
+    // nav------------------------------------------------------------->
+    nav {
+
+        ul {
+
+            li {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 0;
+                    bottom: 0;
+                    background: #EE4562;
+                    transition: width 0.3s;
+                }
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                        transition: width 0.3s;
+                    }
+
+                    span {
+                        color: #EE4562;
+                        transition: all 0.2s;
+                    }
+
+                    svg path {
+                        fill: #EE4562;
+                        transition: all 0.2s;
+                    }
+                }
+            }
+
+            .discover {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 38px;
+                    width: 1px;
+                    right: 0;
+                    background: #D9D9D9;
+
+                }
+
+                span {
+                    color: #EE4562;
+                    transition: all 0.2s;
+                }
+
+
+            }
+        }
+    }
+
+    .offcanvas-body {
+        .search-results {
+            .tag-name {
+                @include tagName()
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:480px) {
+    header {
+        .right-side {
+            max-width: $rightSideHeader;
+
+            .logo {
+                @include logoHeader(tablet);
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    header {
+        .right-side {
+            max-width: $rightSideHeader;
+
+            .logo {
+                @include logoHeader(desktop);
+            }
+        }
+    }
+    .allcategory-search {
+        width: 700px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        .right-side {
+            .logo {
+                @include logoHeader(mobile);
+            }
+        }
+    }
+}
+
+// fixed header ----------------------------------------->
+.fixed-header {
+    position: fixed;
+    top: 0;
+    scroll-behavior: none;
+    scroll-behavior: smooth;
+    background: #fff;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 20 !important;
+    padding: 16px !important;
+    nav {
+        display: none !important;
+    }
+}
+
+
+

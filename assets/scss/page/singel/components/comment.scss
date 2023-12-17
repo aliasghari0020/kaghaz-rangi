@@ -1,0 +1,85 @@
+
+@use"../../../components/typography" as *;
+
+$avatarSize: (
+    desktop:48px,
+    tablet:32px,
+    mobile:24px,
+);
+
+
+
+
+
+
+
+@mixin avatarComment($device) {
+    margin-left: 8px;
+    width: map-get($avatarSize , $device);
+    height: map-get($avatarSize , $device);
+    border-radius: 50%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+
+
+@mixin comeentBox($device) {
+    border: 1px solid #EBECF0;
+    border-radius: 10px;
+    // tag name
+    .tag-name {
+        padding: 0 8px;
+        border-radius: 2px;
+        border: 1px solid var(--Secondary-Color-3, #FFE8C7);
+        background: var(--Secondary-Color-1, #FFFAF0);
+        color: var(--secondary-color-6-base, #EF9848);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    // avatar
+    .avatar {
+        @include avatarComment($device)
+    }
+    // text fild 
+    .input-container{
+        .text-fild{
+            display: flex;
+            border-bottom: 1px solid var(--Neutral-Light-N30, #EBECF0);
+            input{
+                border: none;
+                outline: none;
+                width: 100%;
+                color: var(--Neutral-Dark-N700, #253858);
+                @include text-body-style(small,normal ); // normal text caption
+                &::placeholder{
+                    color: var(--Neutral-Light-N40, #DFE1E6);
+                    @include text-body-style(small,normal ); // normal text caption
+                }
+            }
+        }
+        .buttons{
+            display: none;
+        }
+
+        &.active{
+            .text-fild{
+
+                border-bottom: 2px solid var(--primary-color-6-base, #EE4562);
+            }
+
+            .buttons{
+                display: flex;
+            }
+        }
+    }
+
+
+
+}

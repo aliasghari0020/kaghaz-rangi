@@ -1,0 +1,17 @@
+@use "../../../components/typography" as *;
+
+$paragraphSize:(
+    desktop:body,
+    tablet:small,
+);
+
+
+@mixin paragraph ($device){
+    margin-bottom: 16px;
+    p{
+        color: var(--Text-Color-Light-Text, rgba(0, 0, 0, 0.88));
+        margin-bottom: 0 !important;
+        @include text-body-style(map-get($paragraphSize,$device),normal)
+    }
+}
+

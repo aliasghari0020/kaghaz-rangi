@@ -1,0 +1,130 @@
+$colors: (
+  blue: (
+    1: #1677ff,
+    2: #1677ff,
+    3: #1677ff,
+    4: #1677ff,
+    5: #1677ff,
+    6: #1677ff,
+    7: #1677ff,
+    8: #1677ff,
+    9: #1677ff,
+    10: #1677ff,
+  ),
+  yellow: (
+    1: #fffbe6,
+    2: #fff1b8,
+    3: #ffe58f,
+    4: #ffd666,
+    5: #ffc53d,
+    7: #d48806,
+    8: #ad6800,
+    9: #874d00,
+    10: #613400,
+  ),
+  green: (1: #f6ffed,
+    2: #d9f7be,
+    3: #b7eb8f,
+    4: #95de64,
+    5: #73d13d,
+    7: #389e0d,
+    8: #237804,
+    9: #135200,
+    10: #092b00,
+  ),
+  red: (1: #fff1f0,
+    2: #ffccc7,
+    3: #ffa39e,
+    4: #ff7875,
+    6: #f5222d,
+    7: #cf1322,
+    8: #a8071a,
+    9: #820014,
+    10: #5c0011,
+  ),
+  gray: (1: #fafafa,
+    2: #f5f5f5,
+    3: #f0f0f0,
+    4: #d9d9d9,
+    5: #bfbfbf,
+    6: #8c8c8c,
+    7: #595959,
+    8: #434343,
+    9: #262626,
+    10: #1f1f1f,
+    11: #141414,
+  ),
+  primary: (1: #fff0f0,
+    2: #ffccd0,
+    3: #ffa3ae,
+    4: #fa788b,
+    5: #fa7083,
+    7: #c7304e,
+    8: #a11f3d,
+    9: #7a112d,
+    10: #540b21,
+  ),
+  secondary: (
+    1: #fffaf0,
+    2: #fff9f0,
+    3: #ffe8c7,
+    4: #ffd39e,
+    5: #fcbb74,
+    7: #c97632,
+    8: #a35721,
+    9: #7d3e16,
+    10: #7d3e16,
+  ),
+  light:(text:#000000E0,
+    secodary:#000000A6,
+    disabled:#00000040,
+  )
+);
+
+
+
+$primary:(
+  main:rgba(238, 69, 98, 1),
+  sub: rgba(250, 120, 139, 1),
+);
+$secondary-main: rgba(239, 152, 72, 1);
+
+
+
+$neutral-dark-black: rgba(0, 9, 26, 1);
+$neutral-dark-n700: rgba(37, 56, 88, 1);
+$neutral-mid-n200: rgba(107, 119, 140, 1);
+$neutral-mid-n100: rgba(122, 134, 154, 1);
+$neutral-light-n50: rgba(193, 199, 208, 1);
+$neutral-light-n30: rgba(235, 236, 240, 1);
+$neutral-light-n0: rgba(255, 255, 255, 1);
+.color-text{
+  color: $neutral-dark-black;
+}
+
+
+
+
+
+
+
+
+$my-white: #fff;
+$my-black: #000;
+
+
+@each $color-name, $color-values in $colors {
+  @each $shade, $hex in $color-values {
+    .#{$color-name}-#{$shade} {
+      color: $hex;
+    }
+  }
+}
+
+@each $color-name, $color-values in $colors {
+  @each $shade, $hex in $color-values {
+    .bg-#{$color-name}-#{$shade} {
+      background: $hex;
+    }
+  }
+}

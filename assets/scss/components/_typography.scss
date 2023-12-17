@@ -1,0 +1,122 @@
+
+/* Heading font sizes */
+$heading-font-size:(
+    h1: 41.5px,
+    h2: 36.49px,
+    h3: 32.44px,
+    h4: 28.82px,
+    h5: 25.36px,
+    h6: 22.78px,
+);
+/* Heading line heights */
+$heading-line-height:(
+    h1: 72px,
+    h2: 64px,
+    h3: 56px,
+    h4: 56px,
+    h5: 40px,
+    h6: 40px,
+);
+/* Heading styles mixin */
+@mixin heading-style($size){
+    font-size: map-get($heading-font-size,$size);
+    line-height: map-get($heading-line-height,$size);
+    font-weight: 950;
+};
+/* Text body font sizes */
+$text-body-font-size:(
+    title:20.25px,
+    subTitle:18px,
+    body:16px,
+    small: 14.22px,
+    caption: 12.64px,
+    footnote: 11.24px,
+    tag: 9.99px,
+);
+/* Text body line heights */
+$text-body-line-height:(
+    title:48px,
+    subTitle:40px,
+    body:32px,
+    small: 28px,
+    caption: 24px,
+    footnote: 20px,
+    tag: 16px,
+);
+/* Text body font weights */
+$text-body-font-weight:(
+    normal:500,
+    bold:800
+);
+/* Text body styles mixin */
+@mixin text-body-style($size , $type){
+    font-size: map-get($text-body-font-size,$size);
+    line-height: map-get($text-body-line-height,$size);
+    font-weight: map-get($text-body-font-weight, $type);
+};
+/* Apply heading styles to heading elements */
+h1,.h1{
+    @include heading-style(h1)
+};
+h2,h2{
+    @include heading-style(h2)
+};
+h3,.h3{
+    @include heading-style(h3)
+};
+h4,.h4{
+    @include heading-style(h4)
+};
+h5,.h5{
+    @include heading-style(h5)
+};
+h6,.h6{
+    @include heading-style(h6)
+};
+/* Apply text body styles to text elements */
+.text-title{
+    @include text-body-style(title,normal );
+    font-weight: 950; // text ExtraBlack 
+};
+// ___________________________________________________________
+.text-sub-title{
+    @include text-body-style(subTitle,normal ); // normal text subTitle
+};
+.text-sub-title-b{
+    @include text-body-style(subTitle,bold ); // bold text subTitle
+};
+// ________________________________________________________________
+.text-main{
+    @include text-body-style(body,normal ); // normal text body
+};
+.text-main-b{
+    @include text-body-style(body,bold ); // bold text body
+};
+// ________________________________________________________
+.text-small{
+    @include text-body-style(small,normal ); // normal text small
+};
+.text-small-b{
+    @include text-body-style(small,bold ); // bold text small
+};
+// _________________________________________________________________
+.text-caption{
+    @include text-body-style(caption,normal ); // normal text caption
+};
+.text-caption-b{
+    @include text-body-style(caption,bold ); // bold text caption
+};
+// _________________________________________________________________
+.text-footnote{
+    @include text-body-style(footnote,normal ); // normal text footnote
+};
+.text-footnote-b{
+    @include text-body-style(footnote,bold ); // bold text footnote
+};
+// ______________________________________________________________
+.text-tag{
+    @include text-body-style(tag,normal ); // normal text tag
+};
+.text-tag-b{
+    @include text-body-style(tag,bold ); // bold text tag
+};

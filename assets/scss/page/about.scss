@@ -1,0 +1,182 @@
+@use "../components/typography" as *;
+
+.about {
+    .container-about {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .image-box {
+        max-height: 640px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-height: 640px;
+        }
+    }
+
+    h2,
+    h1 {
+        @include heading-style(h4);
+        color: var(--neutral-dark-black, #00091A);
+    }
+
+    p {
+        @include text-body-style(body, normal); // normal text body;
+        color: var(--neutral-dark-black, #00091A);
+    }
+
+    .card-box {
+        background: var(--neutral-light-n-10, #FAFBFC);
+
+        .card-box-container {
+            gap: 8px;
+
+            .card-avatar {
+                width: 207px;
+                height: 303px;
+
+                .header {
+                    width: 100%;
+                    height: 207px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                .body {
+                    width: 100%;
+                    height: 96px;
+                    padding: 8px 0;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    p {
+                        color: var(--neutral-dark-black, #00091A);
+
+                        @include text-body-style(small, normal); // normal text small
+                    }
+
+                    span {
+                        color: var(--neutral-dark-n-700, #253858);
+                        @include text-body-style(caption, normal); // normal text caption
+                    }
+                }
+            }
+        }
+
+    }
+
+    .contact-form {
+        border-radius: 10px;
+        border: 1px solid var(--neutral-light-n-30, #EBECF0);
+
+        h1 {
+            @include heading-style(h5);
+        }
+
+        h2 {
+            @include heading-style(h6);
+        }
+
+        p {
+            @include text-body-style(small, normal); // normal text small;
+
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 12px;
+            background: var(--neutral-light-n-10, #FAFBFC);
+            padding: 12px;
+
+            &::placeholder {
+                @include text-body-style(small, normal); // normal text small;
+
+                color: var(--neutral-light-n-50, #C1C7D0);
+            }
+        }
+
+        label {
+            padding-right: 8px;
+            @include text-body-style(small, bold); // bold text small;
+            color: var(--text-color-light-text, rgba(0, 0, 0, 0.88));
+        }
+
+        .input-group {
+            gap: 16px;
+
+            div {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:480px) {
+
+    .about {
+        .card-box {
+            .card-box-container {
+                gap: 16px;
+            }
+
+        }
+
+        .contact-form {
+            .input-group {
+                gap: 16px;
+
+                div {
+                    width: 50%;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .about {
+        .card-box {
+            .card-box-container {
+                gap: 24px;
+            }
+
+        }
+
+        .contact-form {
+            h1,h2 {
+                @include heading-style(h4);
+            }
+    
+            p {
+                @include text-body-style(body, normal); // normal text body;
+    
+            }
+            input,
+            textarea {
+                &::placeholder {
+                    @include text-body-style(body, normal); // normal text body;
+                }
+            }
+
+            label {
+                @include text-body-style(body, bold); // normal text body;
+            }
+
+        }
+    }
+
+}

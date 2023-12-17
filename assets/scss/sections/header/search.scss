@@ -1,0 +1,111 @@
+
+
+@mixin search-desktop(){
+    width: 600px;
+    border-radius: 12px;
+    border: 1px solid  #DFE1E6;
+    background:  #FAFBFC;
+    input{
+        background:#FAFBFC;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// genral-------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin tagName() {
+    padding: 6px 12px;
+    border-radius: 100px;
+    color: #fff;
+    display: inline-block;
+}
+
+$itemHeight: (
+    large: 101px,
+    small:83.5px,
+);
+$itemFontsize: (
+    large:14.22px,
+    small:12.64px,
+);
+$itemLineheigh: 24px;
+
+@mixin itemResults($size) {
+    height: map-get($itemHeight, $size);
+
+    p {
+        font-size: map-get($itemFontsize, $size);
+        line-height: $itemLineheigh;
+    }
+}
+
+
+
+
+
+// desktop--------------------------->
+$searchbox: 600px;
+
+@mixin searchResultbox() {
+    width: $searchbox;
+    position: absolute;
+    right: -1px;
+    top: 51px;
+    z-index: 99;
+    max-height: 700px;
+    overflow-y: auto;
+    -ms-overflow-style: none; // for Internet Explorer, Edge
+    scrollbar-width: none; // for Firefox
+    &::-webkit-scrollbar {
+      display: none; // for Chrome, Safari, and Opera
+    }
+}
+
+
+// mobile---------------------------->

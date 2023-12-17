@@ -1,0 +1,24 @@
+
+  $logoWidth:(
+    desktop:149px,
+    tablet:92.593px,
+    mobile:74.074px,
+  );
+
+  $logoHeight:(
+    desktop:54px,
+    tablet:33.33px,
+    mobile:26.667px,
+  );
+
+@mixin logoHeader($size){
+    min-width: map-get($logoWidth,$size);
+    min-height: map-get($logoHeight,$size);
+    width: map-get($logoWidth,$size);
+    height: map-get($logoHeight,$size);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+};
+

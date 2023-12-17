@@ -1,0 +1,60 @@
+@use "../custom-bootstrap/custom.scss";
+
+@use "../components/button.scss";
+
+@use "../components/theme-colors";
+
+@use "../components/typography.scss";
+
+@use "../sections/header/header.scss";
+
+@use "../sections/story.scss";
+
+@use "../sections/slider.scss";
+
+@use '../sections/descovery.scss';
+
+@use '../components/category-card.scss';
+
+@use"../components/card.scss";
+
+
+
+@use "../sections/card-box-special.scss";
+
+@use "../sections/product-section.scss";
+
+@use "../sections/footer.scss";
+
+@use "../components/lable";
+
+// page 
+@use"../page/singel/singel.scss";
+// @use"../page/single.scss";
+@use "../page/allCategory.scss";
+@use"../page/category.scss";
+@use"../page/about.scss";
+@use"../page/author.scss";
+@use"../page/profile.scss";
+
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+;
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img , svg{
+    vertical-align: auto !important;
+}

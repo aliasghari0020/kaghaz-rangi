@@ -1,0 +1,48 @@
+.card-box-special {
+    width: 100%;
+
+    .content {
+        min-width: 250px;
+        height: 100%;
+
+        .btn-slide {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.active {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+
+    .container-slider {
+        width: 100%;
+        border-radius: 0 10px 10px 0;
+
+        @media screen and (min-width: 768px) {
+            width: calc(100% - 278px);
+            border-radius: 10px;
+        }
+
+        @media screen and (min-width: 800px) {
+            padding-right: 32px !important;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: calc(100% - 322px);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-box-special {
+        .content {
+            padding-top: 138px;
+        }
+    }
+}

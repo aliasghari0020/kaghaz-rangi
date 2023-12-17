@@ -1,0 +1,57 @@
+
+$arrowBtnSize:(
+    desktop:72px,
+    tablet:56px,
+    mobile:40px
+);
+
+$closeBtnSize:(
+    desktop:96px,
+    tablet:72px,
+    mobile:56px,
+);
+
+$modalGalleryWidth:(
+    desktop:900px,
+    tablet:650px,
+    mobile:300px,
+);
+
+
+@mixin galleryItme() {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+    }
+}
+
+
+@mixin btnGroup($device){
+
+    .gallery-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        border-radius: 50px;
+        background: #fff;
+        cursor: pointer;
+    }
+    .arrow{
+        width: map-get($arrowBtnSize,$device);
+        height: map-get($arrowBtnSize,$device);
+    }
+    .close{
+        width: map-get($closeBtnSize,$device);
+        height: map-get($closeBtnSize,$device);
+    }
+}
+
+@mixin modalWidth($device){
+    max-width: map-get($modalGalleryWidth , $device);
+}
+

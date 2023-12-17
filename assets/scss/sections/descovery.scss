@@ -1,0 +1,168 @@
+
+$row_increment:(
+  normal:1px,
+  2xl:285px,
+  xl:271px,
+  lg:279.52px,
+  md:278px,
+  sm:266.16px,
+  xs:280px,
+);
+
+$category_row:(
+  2xl:193px,
+  xl:179px,
+  lg:187.59px,
+  md:186px,
+  sm:174px,
+  xs:188px,
+);
+$columnCounter: (
+  2xl:6,
+  xl:5,
+  lg:4,
+  md:3,
+  sm:2,
+  xs:1,
+);
+
+$card-min-width: (
+  2xl:243px,
+  xl:217px,
+  lg:232px,
+  md:229px,
+  sm:208px,
+  xs:229px,
+);
+
+$card-height:(
+  sm:331,
+  md:369,
+  lg:427,
+  xl:492,
+);
+
+
+
+
+
+
+
+
+@mixin discoverContainer($size , $row){
+  width: 100%;
+  display: grid;
+  grid-auto-rows: minmax(map-get($row_increment , $row), auto);
+  grid-template-columns: repeat(map-get($columnCounter,$size), minmax(map-get($card-min-width,$size) , auto));
+  justify-content: center;
+ 
+ 
+}
+
+
+@mixin categoryContainer($size , $row){
+  width: 100%;
+  display: grid;
+  grid-auto-rows: minmax(map-get($category_row , $row), auto);
+  grid-template-columns: repeat(map-get($columnCounter,$size), minmax(map-get($card-min-width,$size) , auto));
+  justify-content: center;
+ 
+ 
+}
+.pin_container {
+  @include discoverContainer(xs,normal)
+}
+
+.normal_container{
+  @include discoverContainer(xs,xs);
+}
+
+.category-container{
+  @include categoryContainer(xs,xs);
+}
+
+@media screen and (min-width: 480px) {
+  .pin_container {
+    @include discoverContainer(sm,normal);
+    justify-content: space-between;
+  }
+  .normal_container{
+    @include discoverContainer(sm,sm);
+    justify-content: space-between;
+  }
+  .category-container{
+    @include categoryContainer(sm,sm);
+  }
+  
+};
+
+@media screen and (min-width: 768px) {
+  .pin_container {
+    @include discoverContainer(md,normal)
+  }
+  .normal_container{
+  @include discoverContainer(md,md);
+  }
+  .category-container{
+    @include categoryContainer(md,md);
+  }
+};
+
+@media screen and (min-width: 1024px) {
+  .pin_container {
+    @include discoverContainer(lg,normal)
+  }
+    .normal_container{
+  @include discoverContainer(lg,lg);
+  }
+  .category-container{
+    @include categoryContainer(lg,lg);
+  }
+};
+@media screen and (min-width: 1280px) {
+  .pin_container {
+    @include discoverContainer(xl,normal)
+  }
+  .normal_container{
+    @include discoverContainer(xl,xl);
+  }
+  .category-container{
+    @include categoryContainer(xl,xl);
+  }
+};
+
+@media screen and (min-width: 1600px) {
+  .pin_container {
+    @include discoverContainer(2xl,normal)
+  }
+   .normal_container{
+    @include discoverContainer(2xl,2xl);
+  }
+  .category-container{
+    @include categoryContainer(2xl,2xl);
+  }
+};
+
+
+
+
+
+.box-sm {
+  grid-row-end: span map-get($card-height, sm);
+margin: 8px;
+}
+
+.box-md {
+  grid-row-end: span map-get($card-height, md);
+margin: 8px;
+}
+
+.box-lg {
+  grid-row-end: span map-get($card-height, lg);
+margin: 8px;
+}
+
+.box-xl {
+  grid-row-end: span map-get($card-height, xl);
+ margin: 8px;
+}
