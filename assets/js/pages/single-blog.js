@@ -41,30 +41,37 @@ allGalleryComponents.forEach((component, index) => {
 
 
 
-const carouselSingle =  new Swiper("#product-crousle-special", {
-  loop: true,
-  slidesPerView: 1.25,
-  spaceBetween: 16,
-  breakpoints: {
-      480: {
-          slidesPerView: 2,
+const sliderBox = (selctor , next , prev)=>{
+  const carouselSingle =  new Swiper(selctor, {
+    loop: true,
+    slidesPerView: 1.25,
+    spaceBetween: 16,
+    navigation: {
+      nextEl: next,
+      prevEl: prev,
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 16
+        },
+        768: {
+            slidesPerView: 2.6,
+            spaceBetween: 16
+        },
+        830:{
+          slidesPerView: 3,
           spaceBetween: 16
-      },
-      768: {
-          slidesPerView: 2.6,
-          spaceBetween: 16
-      },
-      830:{
-        slidesPerView: 3,
-        spaceBetween: 16
-      },
-  },
+        },
+    },
+  
+  });
+}
 
-});
+sliderBox("#chosen-single-slider","#chosen-next" ,"#chosen-prev")
 
-
-
-
+sliderBox("#related-posts-slider","#related-posts-next","#related-posts-prev")
+activeCLickSpecialSlider('.btn-slide')
 
 
 
@@ -115,3 +122,17 @@ const changeTextCollapse = ()=>{
 }
 
 changeTextCollapse()
+
+
+
+
+
+
+
+const label =  document.querySelector('.label-play').addEventListener('click',()=>{
+  document.querySelector('video').setAttribute('controls','true');
+  document.querySelector('video').play();
+  document.querySelector('.label-play').classList.add('d-none');
+ 
+
+})

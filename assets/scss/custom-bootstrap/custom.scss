@@ -107,9 +107,9 @@ $my-font-weights: (500, 800, 950);
     font-family: $my-font-family;
     font-style: $my-font-style;
     font-weight: $weight;
-    src: url("../assets/fonts/woff/IRANYekanX-#{$weight}.woff") format("woff"),
-      url("../assets/fonts/ttf/IRANYekanX-#{$weight}.ttf") format("ttf"),
-      url("../assets/fonts/woff2/IRANYekanX-#{$weight}.woff2") format("woff2");
+    src: url("./assets/fonts/woff/IRANYekanX-#{$weight}.woff") format("woff"),
+      url("./assets/fonts/ttf/IRANYekanX-#{$weight}.ttf") format("ttf"),
+      url("./assets/fonts/woff2/IRANYekanX-#{$weight}.woff2") format("woff2");
   }
 }
 $font-weight-normal: $my-font-weight-normal;

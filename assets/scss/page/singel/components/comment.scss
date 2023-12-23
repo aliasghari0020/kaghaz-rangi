@@ -6,16 +6,9 @@ $avatarSize: (
     tablet:32px,
     mobile:24px,
 );
-
-
-
-
-
-
-
 @mixin avatarComment($device) {
     margin-left: 8px;
-    width: map-get($avatarSize , $device);
+    min-width: map-get($avatarSize , $device);
     height: map-get($avatarSize , $device);
     border-radius: 50%;
 
@@ -25,13 +18,13 @@ $avatarSize: (
         border-radius: 50%;
     }
 }
-
-
-
 @mixin comeentBox($device) {
     border: 1px solid #EBECF0;
     border-radius: 10px;
     // tag name
+    .flex-1{
+        flex: 1;
+    }
     .tag-name {
         padding: 0 8px;
         border-radius: 2px;
@@ -41,6 +34,7 @@ $avatarSize: (
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 4px;
         flex-wrap: nowrap;
     }
     // avatar
@@ -49,13 +43,16 @@ $avatarSize: (
     }
     // text fild 
     .input-container{
+        flex: 1;
         .text-fild{
             display: flex;
             border-bottom: 1px solid var(--Neutral-Light-N30, #EBECF0);
             input{
+                min-width: 150px !important;
+                width: 100%;
                 border: none;
                 outline: none;
-                width: 100%;
+                flex: 1;
                 color: var(--Neutral-Dark-N700, #253858);
                 @include text-body-style(small,normal ); // normal text caption
                 &::placeholder{
