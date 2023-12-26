@@ -1,6 +1,6 @@
 .single-video {
     .section-right {
-        
+
         max-width: 1280px;
         flex-grow: 2;
 
@@ -11,6 +11,7 @@
                 border-radius: 0;
                 aspect-ratio: 16/9;
             }
+
             .label-play {
                 width: 100%;
                 aspect-ratio: 16/9;
@@ -21,6 +22,17 @@
                 cursor: pointer;
             }
         }
+    }
+
+    .tag-section {
+        padding: 6px 12px;
+        border-radius: 8px;
+        border: 1px solid #EBF1F5;
+        cursor: pointer;
+        
+    }
+    .tag-box{
+        gap: 8px;
     }
 
     aside {
@@ -37,16 +49,18 @@
         .section-right {
             .video-box {
                 border-radius: 10px;
+
                 video {
                     border-radius: 10px;
                 }
+
                 .label-play {
                     border-radius: 10px;
                 }
             }
         }
     }
-    
+
 
 
 }
