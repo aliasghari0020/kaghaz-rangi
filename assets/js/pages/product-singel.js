@@ -13,6 +13,12 @@ document.querySelectorAll('.product-box').forEach((item,index)=>{
     item.setAttribute('onclick',`swiper2.slideTo(${index})`)
 })
 
+document.querySelectorAll('.action-btns-container').forEach((e)=>{
+   e.addEventListener('click',()=>{
+    e.querySelector('.action-btns').classList.toggle('d-block')
+   })
+})
+
 
 var swiper, swiper2;
 

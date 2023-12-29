@@ -23,7 +23,6 @@ closeBtn.forEach((btn) => {
 // Open or close the modal
 const openCloseModal = (type) => {
     const modal = document.getElementById('modal-story');
-    console.log('openCloseModal called with type:', type); 
    
     if (!bsModal) {
         bsModal = new bootstrap.Modal(modal, {});
@@ -65,7 +64,6 @@ const swiper1 = new Swiper('#full-story-slider', {
             if (isAutoplaying) {
                 const timeLine = document.querySelectorAll('.time-line div');
                 width = Math.floor((1 - progress) * 100);
-                console.log(Math.floor((1 - progress)*100))
                 timeLine.forEach((line) => {
                     line.setAttribute('style', `width: ${width}%`);
                 })

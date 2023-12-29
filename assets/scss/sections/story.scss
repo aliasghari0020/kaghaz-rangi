@@ -75,7 +75,8 @@ $story-modal-hight: (
     margin: auto;
     display: flex;
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
     -ms-overflow-style: none; // for Internet Explorer, Edge
     scrollbar-width: none; // for Firefox
 

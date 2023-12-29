@@ -24,6 +24,13 @@
                 <!-- right side -->
                 <div class="right-side d-flex">
                     <!-- logo -->
+                    <div class="ms-4 d-lg-none ">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#253858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
                     <div class="logo">
                         <img src="./assets/image/svg/logo.svg" alt="logo">
                     </div>
@@ -319,10 +326,6 @@
                     </div>
                     <!-- mobile -->
                     <div class=" d-flex d-lg-none">
-                        <a href="#" class="btn-md">
-                            <img src="./assets/image/svg/shap.svg" alt="shape-icon">
-                            <span class="text-ca me-1">فروشگاه</span>
-                        </a>
                         <div class="line mx-2"></div>
                         <button class="border-0 bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
                             aria-controls="offcanvasBottom">
@@ -687,205 +690,153 @@
                 </div>
             </div>
         </header>
-        <main class="px-xl-10  single d-flex  mt-xl-4 single-video">
-            <div class="section-right">
-                <!-- video -->
-                <div  class="position-relative video-box">
-                    <video  playsinline  class=" w-100" id="#player"   poster="./assets/image/title.png">
-                        <source src="./assets/video/9a97e4c61d60fcee94944400279a69b620554929-720p.mp4">
-                    </video>
-                    <div class=" d-flex justify-content-center align-items-center label-play " >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
-                            <path d="M21.668 21.6219C21.668 17.4135 21.668 15.3093 22.5454 14.1494C23.3098 13.1389 24.4782 12.5136 25.743 12.4381C27.1949 12.3514 28.9456 13.5186 32.4472 15.853L78.0147 46.2313C80.908 48.1601 82.3546 49.1246 82.8587 50.3402C83.2995 51.4029 83.2995 52.5974 82.8587 53.6601C82.3546 54.8757 80.908 55.8402 78.0147 57.769L32.4472 88.1473C28.9456 90.4817 27.1949 91.6489 25.743 91.5622C24.4782 91.4867 23.3098 90.8614 22.5454 89.8509C21.668 88.691 21.668 86.5868 21.668 82.3784V21.6219Z" fill="white" fill-opacity="0.95"/>
-                        </svg>
+        <main class="px-xl-10  single ">
+            <div class="d-flex  mt-xl-4 single-video">
+                <div class="section-right">
+                    <!-- video -->
+                    <div  class="position-relative video-box">
+                        <video  playsinline  class=" w-100" id="#player"   poster="./assets/image/title.png">
+                            <source src="./assets/video/9a97e4c61d60fcee94944400279a69b620554929-720p.mp4">
+                        </video>
+                        <div class=" d-flex justify-content-center align-items-center label-play " >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" fill="none">
+                                <path d="M21.668 21.6219C21.668 17.4135 21.668 15.3093 22.5454 14.1494C23.3098 13.1389 24.4782 12.5136 25.743 12.4381C27.1949 12.3514 28.9456 13.5186 32.4472 15.853L78.0147 46.2313C80.908 48.1601 82.3546 49.1246 82.8587 50.3402C83.2995 51.4029 83.2995 52.5974 82.8587 53.6601C82.3546 54.8757 80.908 55.8402 78.0147 57.769L32.4472 88.1473C28.9456 90.4817 27.1949 91.6489 25.743 91.5622C24.4782 91.4867 23.3098 90.8614 22.5454 89.8509C21.668 88.691 21.668 86.5868 21.668 82.3784V21.6219Z" fill="white" fill-opacity="0.95"/>
+                            </svg>
+                        </div>
                     </div>
-                </div>
-                <!-- box-info -->
-                <div class="info-title mt-lg-8 px-3 px-sm-6 px-xl-0">
-                    <div class="mt-6 mt-lg-0 ">
-                        <!-- bread-crumbs -->
-                        <div class="bread-crumbs w-100 d-flex mb-2">
-                            <div class="lable-blue ms-2">
-                                <p class="mb-0">کاردستی حرفه‌ای</p>
-                            </div>
-                            <div class="lable-yellow">
-                                <p class="mb-0">
-                                    کاردستی مناسبتی‌
-                                </p>
-                            </div>
-                        </div>
-                        <!-- title -->
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="title">
-                                <h1>
-                                    آموزش ساخت مایع حباب ساز به سه روش مختلف
-                                </h1>
-                            </div>
-                            <div class="d-lg-flex d-none">
-                                <button class="bg-white border-0 me-8">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                        fill="none">
-                                        <path
-                                            d="M4 10.4C4 8.15979 4 7.03968 4.43597 6.18404C4.81947 5.43139 5.43139 4.81947 6.18404 4.43597C7.03969 4 8.15979 4 10.4 4H21.6C23.8402 4 24.9603 4 25.816 4.43597C26.5686 4.81947 27.1805 5.43139 27.564 6.18404C28 7.03968 28 8.15979 28 10.4V17.6C28 19.8402 28 20.9603 27.564 21.816C27.1805 22.5686 26.5686 23.1805 25.816 23.564C24.9603 24 23.8402 24 21.6 24H18.245C17.4129 24 16.9969 24 16.599 24.0817C16.2459 24.1541 15.9043 24.274 15.5833 24.4379C15.2216 24.6228 14.8967 24.8826 14.247 25.4024L11.0663 27.9469C10.5116 28.3908 10.2342 28.6127 10.0007 28.6129C9.79769 28.6131 9.60563 28.5208 9.47897 28.3622C9.33333 28.1797 9.33333 27.8245 9.33333 27.114V24C8.09337 24 7.47339 24 6.96472 23.8637C5.58436 23.4938 4.50617 22.4156 4.1363 21.0353C4 20.5266 4 19.9066 4 18.6667V10.4Z"
-                                            stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button class="bg-white border-0 me-8">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                        fill="none">
-                                        <path
-                                            d="M6.66797 10.4C6.66797 8.15979 6.66797 7.03969 7.10394 6.18404C7.48744 5.43139 8.09936 4.81947 8.85201 4.43597C9.70765 4 10.8278 4 13.068 4H18.9346C21.1748 4 22.295 4 23.1506 4.43597C23.9032 4.81947 24.5152 5.43139 24.8987 6.18404C25.3346 7.03969 25.3346 8.15979 25.3346 10.4V28L16.0013 22.6667L6.66797 28V10.4Z"
-                                            stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                                <button class="bg-white border-0 me-8">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                        fill="none">
-                                        <path
-                                            d="M11.4533 18.0133L20.56 23.32M20.5467 8.67999L11.4533 13.9867M28 6.66666C28 8.8758 26.2091 10.6667 24 10.6667C21.7909 10.6667 20 8.8758 20 6.66666C20 4.45752 21.7909 2.66666 24 2.66666C26.2091 2.66666 28 4.45752 28 6.66666ZM12 16C12 18.2091 10.2091 20 8 20C5.79086 20 4 18.2091 4 16C4 13.7909 5.79086 12 8 12C10.2091 12 12 13.7909 12 16ZM28 25.3333C28 27.5425 26.2091 29.3333 24 29.3333C21.7909 29.3333 20 27.5425 20 25.3333C20 23.1242 21.7909 21.3333 24 21.3333C26.2091 21.3333 28 23.1242 28 25.3333Z"
-                                            stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- author -->
-                        <div class="d-flex author-single ">
-                            <div class="d-flex align-items-center">
-                                <div class="avatar">
-                                    <img src="./assets/image/avatar.png" alt="avatar">
+                    <!-- box-info -->
+                    <div class="info-title mt-lg-8 px-3 px-sm-6 px-xl-0">
+                        <div class="mt-6 mt-lg-0 ">
+                            <!-- bread-crumbs -->
+                            <div class="bread-crumbs w-100 d-flex mb-2">
+                                <div class="lable-blue ms-2">
+                                    <p class="mb-0">کاردستی حرفه‌ای</p>
                                 </div>
-                                <p class="mb-0">بهنام جعفری</p>
-                            </div>
-                            <div class="d-flex me-2 align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M21 10H3M16 2V6M8 2V6M10.5 14L12 13V18M10.75 18H13.25M7.8 22H16.2C17.8802 22 18.7202 22 19.362 21.673C19.9265 21.3854 20.3854 20.9265 20.673 20.362C21 19.7202 21 18.8802 21 17.2V8.8C21 7.11984 21 6.27976 20.673 5.63803C20.3854 5.07354 19.9265 4.6146 19.362 4.32698C18.7202 4 17.8802 4 16.2 4H7.8C6.11984 4 5.27976 4 4.63803 4.32698C4.07354 4.6146 3.6146 5.07354 3.32698 5.63803C3 6.27976 3 7.11984 3 8.8V17.2C3 18.8802 3 19.7202 3.32698 20.362C3.6146 20.9265 4.07354 21.3854 4.63803 21.673C5.27976 22 6.11984 22 7.8 22Z"
-                                        stroke="#868A8C" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <p class="mb-0 text-small me-1">31 مرداد 1402</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="paragraph">
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
-                            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-                            فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
-                            در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها
-                            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
-                            کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به
-                            پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
-                            موجود طراحی اساسا مورد استفاده قرار گیرد.
-                        </p>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between my-10 px-3  px-sm-6 px-xl-0">
-                        <a href="#">
-                            <div class="source-link d-flex px-3 py-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                                    <path d="M10.5749 6.18581L6.06709 10.6936C5.04197 11.7187 3.37991 11.7187 2.35478 10.6936C1.32966 9.66849 1.32966 8.00643 2.35478 6.98131L6.86259 2.4735C7.546 1.79008 8.65404 1.79008 9.33746 2.4735C10.0209 3.15692 10.0209 4.26496 9.33746 4.94837L5.00643 9.2794C4.66472 9.62111 4.1107 9.62111 3.769 9.2794C3.42729 8.93769 3.42729 8.38367 3.769 8.04197L7.56969 4.24127" stroke="#00091A" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p class="mb-0 text-tag me-1">
-                                    لینک منبع
-                                </p>
-                            </div>
-                        </a>
-                        <div>
-                            <div class="lable-red">
-                                <p class="mb-0">کاردستی کودکانه‌</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="d-flex flex-column-reverse">
-                    <div class="comment-box px-sm-6 px-3 py-6 mx-3 mx-sm-6 mx-xl-0 mt-10 ">
-                        <div class="title">
-                            <h4>نظرات کاربران</h4>
-                            <p class="mb-0 text-caption">150 نظر</p>
-                        </div>
-                        <div class="my-4 py-2 ">
-                            <!-- input text -->
-                            <div class="d-flex">
-                                <div class="avatar">
-                                    <img src="./assets/image/avatar.png" alt="">
+                                <div class="lable-yellow">
+                                    <p class="mb-0">
+                                        کاردستی مناسبتی‌
+                                    </p>
                                 </div>
-                                <div class=" input-container pt-lg-4 p-sm-2 p-1 " id="main-input-comment">
-                                    <div class="text-fild me-2 ">
-                                        <input type="text" placeholder="نظر خود را بنویسید...">
-                                    </div>
-                                    <div class=" justify-content-end mt-1 buttons">
-                                        <button>
-                                           <span class="ms-2"> ارسال نظر</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                                <path d="M8.74928 12.0548L17.4993 3.30483M8.85559 12.3282L11.0457 17.9599C11.2386 18.456 11.3351 18.7041 11.4741 18.7765C11.5946 18.8393 11.7381 18.8394 11.8587 18.7767C11.9978 18.7045 12.0946 18.4565 12.2881 17.9606L17.78 3.8875C17.9547 3.43985 18.0421 3.21602 17.9943 3.073C17.9528 2.94879 17.8553 2.85132 17.7311 2.80982C17.5881 2.76204 17.3643 2.84939 16.9166 3.02408L2.84349 8.51603C2.34759 8.70955 2.09965 8.80631 2.02739 8.9454C1.96475 9.06597 1.96483 9.20951 2.02761 9.33001C2.10004 9.46902 2.3481 9.56548 2.84422 9.75842L8.47589 11.9485C8.5766 11.9877 8.62695 12.0073 8.66935 12.0375C8.70693 12.0643 8.7398 12.0972 8.7666 12.1348C8.79685 12.1772 8.81643 12.2275 8.85559 12.3282Z" stroke="#00091A" stroke-linecap="round" stroke-linejoin="round"/>
+                            </div>
+                            <!-- title -->
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="title">
+                                    <h1>
+                                        آموزش ساخت مایع حباب ساز به سه روش مختلف
+                                    </h1>
+                                </div>
+                                <div class="d-lg-flex d-none align-items-center">
+                                    <a href="#comment-box">
+                                        <button class="bg-white border-0 me-8">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                                fill="none">
+                                                <path
+                                                    d="M4 10.4C4 8.15979 4 7.03968 4.43597 6.18404C4.81947 5.43139 5.43139 4.81947 6.18404 4.43597C7.03969 4 8.15979 4 10.4 4H21.6C23.8402 4 24.9603 4 25.816 4.43597C26.5686 4.81947 27.1805 5.43139 27.564 6.18404C28 7.03968 28 8.15979 28 10.4V17.6C28 19.8402 28 20.9603 27.564 21.816C27.1805 22.5686 26.5686 23.1805 25.816 23.564C24.9603 24 23.8402 24 21.6 24H18.245C17.4129 24 16.9969 24 16.599 24.0817C16.2459 24.1541 15.9043 24.274 15.5833 24.4379C15.2216 24.6228 14.8967 24.8826 14.247 25.4024L11.0663 27.9469C10.5116 28.3908 10.2342 28.6127 10.0007 28.6129C9.79769 28.6131 9.60563 28.5208 9.47897 28.3622C9.33333 28.1797 9.33333 27.8245 9.33333 27.114V24C8.09337 24 7.47339 24 6.96472 23.8637C5.58436 23.4938 4.50617 22.4156 4.1363 21.0353C4 20.5266 4 19.9066 4 18.6667V10.4Z"
+                                                    stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
                                             </svg>
                                         </button>
-                                    </div>
+                                    </a>
+                                    <button class="bg-white border-0 me-8">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                            fill="none">
+                                            <path
+                                                d="M6.66797 10.4C6.66797 8.15979 6.66797 7.03969 7.10394 6.18404C7.48744 5.43139 8.09936 4.81947 8.85201 4.43597C9.70765 4 10.8278 4 13.068 4H18.9346C21.1748 4 22.295 4 23.1506 4.43597C23.9032 4.81947 24.5152 5.43139 24.8987 6.18404C25.3346 7.03969 25.3346 8.15979 25.3346 10.4V28L16.0013 22.6667L6.66797 28V10.4Z"
+                                                stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="bg-white border-0 me-8" data-bs-toggle="modal"
+                                    data-bs-target="#modal-shaer"
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                            fill="none">
+                                            <path
+                                                d="M11.4533 18.0133L20.56 23.32M20.5467 8.67999L11.4533 13.9867M28 6.66666C28 8.8758 26.2091 10.6667 24 10.6667C21.7909 10.6667 20 8.8758 20 6.66666C20 4.45752 21.7909 2.66666 24 2.66666C26.2091 2.66666 28 4.45752 28 6.66666ZM12 16C12 18.2091 10.2091 20 8 20C5.79086 20 4 18.2091 4 16C4 13.7909 5.79086 12 8 12C10.2091 12 12 13.7909 12 16ZM28 25.3333C28 27.5425 26.2091 29.3333 24 29.3333C21.7909 29.3333 20 27.5425 20 25.3333C20 23.1242 21.7909 21.3333 24 21.3333C26.2091 21.3333 28 23.1242 28 25.3333Z"
+                                                stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="comment-result mt-3">
-                                <div class="main-comment py-2">
-                                    <div class="comment-card">
-                                        <div class="d-flex align-items-start">
-                                            <div class="avatar ms-2">
-                                                <img src="./assets/image/avatar.png" alt="avatar">
-                                            </div>
-                                            <div class="mt-3">
-                                                <div class=" mb-1">
-                                                    <p class="user-name mb-0 text-caption-b">بهنام جعفری</p>
-                                                    <p class="text-comment mb-0 text-caption me-1">لورم ایپسوم متن ساختگی با
-                                                        تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،</p>
-                                                </div>
-                                                <div class="d-flex ">
-                                                    <div class="time text-footnote ">10 ساعت پیش</div>
-                                                    <button class="d-flex border-0 bg-white me-4 align-items-center reply">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                                                            viewBox="0 0 16 17" fill="none">
-                                                            <path
-                                                                d="M2 5.93633C2 4.81622 2 4.25617 2.21799 3.82835C2.40973 3.45202 2.71569 3.14606 3.09202 2.95432C3.51984 2.73633 4.0799 2.73633 5.2 2.73633H10.8C11.9201 2.73633 12.4802 2.73633 12.908 2.95432C13.2843 3.14606 13.5903 3.45202 13.782 3.82835C14 4.25617 14 4.81622 14 5.93633V9.53633C14 10.6564 14 11.2165 13.782 11.6443C13.5903 12.0206 13.2843 12.3266 12.908 12.5183C12.4802 12.7363 11.9201 12.7363 10.8 12.7363H9.1225C8.70646 12.7363 8.49845 12.7363 8.29948 12.7772C8.12295 12.8134 7.95213 12.8733 7.79166 12.9553C7.61078 13.0477 7.44834 13.1777 7.12348 13.4375L5.53317 14.7098C5.25578 14.9317 5.11708 15.0427 5.00036 15.0428C4.89885 15.0429 4.80282 14.9967 4.73949 14.9174C4.66667 14.8262 4.66667 14.6486 4.66667 14.2933V12.7363C4.04669 12.7363 3.7367 12.7363 3.48236 12.6682C2.79218 12.4832 2.25308 11.9441 2.06815 11.254C2 10.9996 2 10.6896 2 10.0697V5.93633Z"
-                                                                stroke="black" stroke-opacity="0.65098" stroke-width="1.5"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                        <!-- روی این المان که کلیک میشه اینپوتی که کامنت داره باید به باکس ادد بشه -->
-                                                        <span class="text-footnote me-1">
-                                                            پاسخ
-                                                        </span>
-                                                    </button>
-                                                </div>
-                                            </div>
+                            <!-- author -->
+                            <div class="d-flex author-single ">
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar">
+                                        <img src="./assets/image/avatar.png" alt="avatar">
+                                    </div>
+                                    <p class="mb-0">بهنام جعفری</p>
+                                </div>
+                                <div class="d-flex me-2 align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M21 10H3M16 2V6M8 2V6M10.5 14L12 13V18M10.75 18H13.25M7.8 22H16.2C17.8802 22 18.7202 22 19.362 21.673C19.9265 21.3854 20.3854 20.9265 20.673 20.362C21 19.7202 21 18.8802 21 17.2V8.8C21 7.11984 21 6.27976 20.673 5.63803C20.3854 5.07354 19.9265 4.6146 19.362 4.32698C18.7202 4 17.8802 4 16.2 4H7.8C6.11984 4 5.27976 4 4.63803 4.32698C4.07354 4.6146 3.6146 5.07354 3.32698 5.63803C3 6.27976 3 7.11984 3 8.8V17.2C3 18.8802 3 19.7202 3.32698 20.362C3.6146 20.9265 4.07354 21.3854 4.63803 21.673C5.27976 22 6.11984 22 7.8 22Z"
+                                            stroke="#868A8C" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="mb-0 text-small me-1">31 مرداد 1402</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="paragraph">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
+                                فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
+                                در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها
+                                شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                                کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به
+                                پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                                موجود طراحی اساسا مورد استفاده قرار گیرد.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between my-10 px-3  px-sm-6 px-xl-0">
+                            <a href="#">
+                                <div class="source-link d-flex px-3 py-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                        <path d="M10.5749 6.18581L6.06709 10.6936C5.04197 11.7187 3.37991 11.7187 2.35478 10.6936C1.32966 9.66849 1.32966 8.00643 2.35478 6.98131L6.86259 2.4735C7.546 1.79008 8.65404 1.79008 9.33746 2.4735C10.0209 3.15692 10.0209 4.26496 9.33746 4.94837L5.00643 9.2794C4.66472 9.62111 4.1107 9.62111 3.769 9.2794C3.42729 8.93769 3.42729 8.38367 3.769 8.04197L7.56969 4.24127" stroke="#00091A" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p class="mb-0 text-tag me-1">
+                                        لینک منبع
+                                    </p>
+                                </div>
+                            </a>
+                            <div>
+                                <div class="lable-red">
+                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="d-flex flex-column-reverse">
+                        <div class="comment-box px-sm-6 px-3 py-6 mx-3 mx-sm-6 mx-xl-0 mt-10 " id="comment-box">
+                            <div class="title">
+                                <h4>نظرات کاربران</h4>
+                                <p class="mb-0 text-caption">150 نظر</p>
+                            </div>
+                            <div class="my-4 py-2 ">
+                                <!-- input text -->
+                                <div class="d-flex">
+                                    <div class="avatar">
+                                        <img src="./assets/image/avatar.png" alt="">
+                                    </div>
+                                    <div class=" input-container pt-lg-4 p-sm-2 p-1 " id="main-input-comment">
+                                        <div class="text-fild me-2 ">
+                                            <input type="text" placeholder="نظر خود را بنویسید...">
                                         </div>
-                                        <!-- اینپوت پاسخ -->
-                                        <div class="d-flex me-lg-14 me-sm-10 me-8 mt-4">
-                                            <div class="avatar">
-                                                <img src="./assets/image/avatar.png" alt="">
-                                            </div>
-                                            <div class=" input-container active pt-lg-4 pt-sm-2 pt-1 ">
-                                                <div class="text-fild me-2 ">
-                                                    <input type="text" placeholder="نظر خود را بنویسید...">
-                                                </div>
-                                                <div class="d-flex justify-content-end mt-1">
-                                                    <button>انصراف</button>
-                                                    <button>
-                                                        <span class="ms-2"> ارسال نظر</span>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                                                            <path d="M8.74928 12.0548L17.4993 3.30483M8.85559 12.3282L11.0457 17.9599C11.2386 18.456 11.3351 18.7041 11.4741 18.7765C11.5946 18.8393 11.7381 18.8394 11.8587 18.7767C11.9978 18.7045 12.0946 18.4565 12.2881 17.9606L17.78 3.8875C17.9547 3.43985 18.0421 3.21602 17.9943 3.073C17.9528 2.94879 17.8553 2.85132 17.7311 2.80982C17.5881 2.76204 17.3643 2.84939 16.9166 3.02408L2.84349 8.51603C2.34759 8.70955 2.09965 8.80631 2.02739 8.9454C1.96475 9.06597 1.96483 9.20951 2.02761 9.33001C2.10004 9.46902 2.3481 9.56548 2.84422 9.75842L8.47589 11.9485C8.5766 11.9877 8.62695 12.0073 8.66935 12.0375C8.70693 12.0643 8.7398 12.0972 8.7666 12.1348C8.79685 12.1772 8.81643 12.2275 8.85559 12.3282Z" stroke="#00091A" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
+                                        <div class=" justify-content-end mt-1 buttons">
+                                            <button>
+                                               <span class="ms-2"> ارسال نظر</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                    <path d="M8.74928 12.0548L17.4993 3.30483M8.85559 12.3282L11.0457 17.9599C11.2386 18.456 11.3351 18.7041 11.4741 18.7765C11.5946 18.8393 11.7381 18.8394 11.8587 18.7767C11.9978 18.7045 12.0946 18.4565 12.2881 17.9606L17.78 3.8875C17.9547 3.43985 18.0421 3.21602 17.9943 3.073C17.9528 2.94879 17.8553 2.85132 17.7311 2.80982C17.5881 2.76204 17.3643 2.84939 16.9166 3.02408L2.84349 8.51603C2.34759 8.70955 2.09965 8.80631 2.02739 8.9454C1.96475 9.06597 1.96483 9.20951 2.02761 9.33001C2.10004 9.46902 2.3481 9.56548 2.84422 9.75842L8.47589 11.9485C8.5766 11.9877 8.62695 12.0073 8.66935 12.0375C8.70693 12.0643 8.7398 12.0972 8.7666 12.1348C8.79685 12.1772 8.81643 12.2275 8.85559 12.3282Z" stroke="#00091A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
                                         </div>
                                     </div>
-                                    <button class=" border-0 bg-white my-4 text-caption btn-show-sub me-lg-14  me-sm-10 me-6 " type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
-                                        aria-controls="collapseExample">
-                                        <span class="text">مشاهده همه پاسخ‌ها</span>
-                                        <span class="cunter">(15)</span>
-                                    </button>
-                                    <div class="sub-container me-lg-14 me-sm-10 me-6  collapse" id="collapseExample">
-                                        <div class="sub-comment mt-4 comment-card">
+                                </div>
+                                <div class="comment-result mt-3">
+                                    <div class="main-comment py-2">
+                                        <div class="comment-card">
                                             <div class="d-flex align-items-start">
                                                 <div class="avatar ms-2">
                                                     <img src="./assets/image/avatar.png" alt="avatar">
@@ -894,8 +845,7 @@
                                                     <div class=" mb-1">
                                                         <p class="user-name mb-0 text-caption-b">بهنام جعفری</p>
                                                         <p class="text-comment mb-0 text-caption me-1">لورم ایپسوم متن ساختگی با
-                                                            تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
-                                                        </p>
+                                                            تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،</p>
                                                     </div>
                                                     <div class="d-flex ">
                                                         <div class="time text-footnote ">10 ساعت پیش</div>
@@ -907,6 +857,7 @@
                                                                     stroke="black" stroke-opacity="0.65098" stroke-width="1.5"
                                                                     stroke-linecap="round" stroke-linejoin="round" />
                                                             </svg>
+                                                            <!-- روی این المان که کلیک میشه اینپوتی که کامنت داره باید به باکس ادد بشه -->
                                                             <span class="text-footnote me-1">
                                                                 پاسخ
                                                             </span>
@@ -914,21 +865,19 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex  mt-4 ">
+                                            <!-- اینپوت پاسخ -->
+                                            <div class="d-flex me-lg-14 me-sm-10 me-8 mt-4">
                                                 <div class="avatar">
                                                     <img src="./assets/image/avatar.png" alt="">
                                                 </div>
-                                                <div class=" input-container active pt-lg-4 pt-sm-2 pt-1  ">
-                                                    <div class="text-fild me-2  flex-column  flex-sm-row align-items-start">
-                                                        <div class="tag-name text-caption">
-                                                             علی اصغری
-                                                        </div>
+                                                <div class=" input-container active pt-lg-4 pt-sm-2 pt-1 ">
+                                                    <div class="text-fild me-2 ">
                                                         <input type="text" placeholder="نظر خود را بنویسید...">
                                                     </div>
                                                     <div class="d-flex justify-content-end mt-1">
                                                         <button>انصراف</button>
                                                         <button>
-                                                            ارسال نظر
+                                                            <span class="ms-2"> ارسال نظر</span>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                                                                 <path d="M8.74928 12.0548L17.4993 3.30483M8.85559 12.3282L11.0457 17.9599C11.2386 18.456 11.3351 18.7041 11.4741 18.7765C11.5946 18.8393 11.7381 18.8394 11.8587 18.7767C11.9978 18.7045 12.0946 18.4565 12.2881 17.9606L17.78 3.8875C17.9547 3.43985 18.0421 3.21602 17.9943 3.073C17.9528 2.94879 17.8553 2.85132 17.7311 2.80982C17.5881 2.76204 17.3643 2.84939 16.9166 3.02408L2.84349 8.51603C2.34759 8.70955 2.09965 8.80631 2.02739 8.9454C1.96475 9.06597 1.96483 9.20951 2.02761 9.33001C2.10004 9.46902 2.3481 9.56548 2.84422 9.75842L8.47589 11.9485C8.5766 11.9877 8.62695 12.0073 8.66935 12.0375C8.70693 12.0643 8.7398 12.0972 8.7666 12.1348C8.79685 12.1772 8.81643 12.2275 8.85559 12.3282Z" stroke="#00091A" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
@@ -936,6 +885,103 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <button class=" border-0 bg-white my-4 text-caption btn-show-sub me-lg-14  me-sm-10 me-6 " type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                            <span class="text">مشاهده همه پاسخ‌ها</span>
+                                            <span class="cunter">(15)</span>
+                                        </button>
+                                        <div class="sub-container me-lg-14 me-sm-10 me-6  collapse" id="collapseExample">
+                                            <div class="sub-comment mt-4 comment-card">
+                                                <div class="d-flex align-items-start">
+                                                    <div class="avatar ms-2">
+                                                        <img src="./assets/image/avatar.png" alt="avatar">
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <div class=" mb-1">
+                                                            <p class="user-name mb-0 text-caption-b">بهنام جعفری</p>
+                                                            <p class="text-comment mb-0 text-caption me-1">لورم ایپسوم متن ساختگی با
+                                                                تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                                                            </p>
+                                                        </div>
+                                                        <div class="d-flex ">
+                                                            <div class="time text-footnote ">10 ساعت پیش</div>
+                                                            <button class="d-flex border-0 bg-white me-4 align-items-center reply">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                                                    viewBox="0 0 16 17" fill="none">
+                                                                    <path
+                                                                        d="M2 5.93633C2 4.81622 2 4.25617 2.21799 3.82835C2.40973 3.45202 2.71569 3.14606 3.09202 2.95432C3.51984 2.73633 4.0799 2.73633 5.2 2.73633H10.8C11.9201 2.73633 12.4802 2.73633 12.908 2.95432C13.2843 3.14606 13.5903 3.45202 13.782 3.82835C14 4.25617 14 4.81622 14 5.93633V9.53633C14 10.6564 14 11.2165 13.782 11.6443C13.5903 12.0206 13.2843 12.3266 12.908 12.5183C12.4802 12.7363 11.9201 12.7363 10.8 12.7363H9.1225C8.70646 12.7363 8.49845 12.7363 8.29948 12.7772C8.12295 12.8134 7.95213 12.8733 7.79166 12.9553C7.61078 13.0477 7.44834 13.1777 7.12348 13.4375L5.53317 14.7098C5.25578 14.9317 5.11708 15.0427 5.00036 15.0428C4.89885 15.0429 4.80282 14.9967 4.73949 14.9174C4.66667 14.8262 4.66667 14.6486 4.66667 14.2933V12.7363C4.04669 12.7363 3.7367 12.7363 3.48236 12.6682C2.79218 12.4832 2.25308 11.9441 2.06815 11.254C2 10.9996 2 10.6896 2 10.0697V5.93633Z"
+                                                                        stroke="black" stroke-opacity="0.65098" stroke-width="1.5"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="text-footnote me-1">
+                                                                    پاسخ
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex  mt-4 ">
+                                                    <div class="avatar">
+                                                        <img src="./assets/image/avatar.png" alt="">
+                                                    </div>
+                                                    <div class=" input-container active pt-lg-4 pt-sm-2 pt-1  ">
+                                                        <div class="text-fild me-2  flex-column  flex-sm-row align-items-start">
+                                                            <div class="tag-name text-caption">
+                                                                 علی اصغری
+                                                            </div>
+                                                            <input type="text" placeholder="نظر خود را بنویسید...">
+                                                        </div>
+                                                        <div class="d-flex justify-content-end mt-1">
+                                                            <button>انصراف</button>
+                                                            <button>
+                                                                ارسال نظر
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                                                                    <path d="M8.74928 12.0548L17.4993 3.30483M8.85559 12.3282L11.0457 17.9599C11.2386 18.456 11.3351 18.7041 11.4741 18.7765C11.5946 18.8393 11.7381 18.8394 11.8587 18.7767C11.9978 18.7045 12.0946 18.4565 12.2881 17.9606L17.78 3.8875C17.9547 3.43985 18.0421 3.21602 17.9943 3.073C17.9528 2.94879 17.8553 2.85132 17.7311 2.80982C17.5881 2.76204 17.3643 2.84939 16.9166 3.02408L2.84349 8.51603C2.34759 8.70955 2.09965 8.80631 2.02739 8.9454C1.96475 9.06597 1.96483 9.20951 2.02761 9.33001C2.10004 9.46902 2.3481 9.56548 2.84422 9.75842L8.47589 11.9485C8.5766 11.9877 8.62695 12.0073 8.66935 12.0375C8.70693 12.0643 8.7398 12.0972 8.7666 12.1348C8.79685 12.1772 8.81643 12.2275 8.85559 12.3282Z" stroke="#00091A" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-start">
+                                                    <div class="avatar ms-2">
+                                                        <img src="./assets/image/avatar.png" alt="avatar">
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <div class=" mb-1">
+                                                            <p class="user-name mb-0 text-caption-b">بهنام جعفری</p>
+                                                          <div class="d-flex flex-column flex-sm-row align-items-start ">
+                                                            <div class="tag-name text-caption">
+                                                                علی اصغری
+                                                           </div>
+                                                            <p class="text-comment mb-0 text-caption me-1 flex-1">لورم ایپسوم متن ساختگی با
+                                                                تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                                                            </p>
+                                                          </div>
+                                                        </div>
+                                                        <div class="d-flex ">
+                                                            <div class="time text-footnote ">10 ساعت پیش</div>
+                                                            <button class="d-flex border-0 bg-white me-4 align-items-center reply">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                                                    viewBox="0 0 16 17" fill="none">
+                                                                    <path
+                                                                        d="M2 5.93633C2 4.81622 2 4.25617 2.21799 3.82835C2.40973 3.45202 2.71569 3.14606 3.09202 2.95432C3.51984 2.73633 4.0799 2.73633 5.2 2.73633H10.8C11.9201 2.73633 12.4802 2.73633 12.908 2.95432C13.2843 3.14606 13.5903 3.45202 13.782 3.82835C14 4.25617 14 4.81622 14 5.93633V9.53633C14 10.6564 14 11.2165 13.782 11.6443C13.5903 12.0206 13.2843 12.3266 12.908 12.5183C12.4802 12.7363 11.9201 12.7363 10.8 12.7363H9.1225C8.70646 12.7363 8.49845 12.7363 8.29948 12.7772C8.12295 12.8134 7.95213 12.8733 7.79166 12.9553C7.61078 13.0477 7.44834 13.1777 7.12348 13.4375L5.53317 14.7098C5.25578 14.9317 5.11708 15.0427 5.00036 15.0428C4.89885 15.0429 4.80282 14.9967 4.73949 14.9174C4.66667 14.8262 4.66667 14.6486 4.66667 14.2933V12.7363C4.04669 12.7363 3.7367 12.7363 3.48236 12.6682C2.79218 12.4832 2.25308 11.9441 2.06815 11.254C2 10.9996 2 10.6896 2 10.0697V5.93633Z"
+                                                                        stroke="black" stroke-opacity="0.65098" stroke-width="1.5"
+                                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                                </svg>
+                                                                <span class="text-footnote me-1">
+                                                                    پاسخ
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-comment py-2">
+                                        <div class="comment-card">
                                             <div class="d-flex align-items-start">
                                                 <div class="avatar ms-2">
                                                     <img src="./assets/image/avatar.png" alt="avatar">
@@ -943,14 +989,8 @@
                                                 <div class="mt-3">
                                                     <div class=" mb-1">
                                                         <p class="user-name mb-0 text-caption-b">بهنام جعفری</p>
-                                                      <div class="d-flex flex-column flex-sm-row align-items-start ">
-                                                        <div class="tag-name text-caption">
-                                                            علی اصغری
-                                                       </div>
-                                                        <p class="text-comment mb-0 text-caption me-1 flex-1">لورم ایپسوم متن ساختگی با
-                                                            تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
-                                                        </p>
-                                                      </div>
+                                                        <p class="text-comment mb-0 text-caption me-1">لورم ایپسوم متن ساختگی با
+                                                            تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،</p>
                                                     </div>
                                                     <div class="d-flex ">
                                                         <div class="time text-footnote ">10 ساعت پیش</div>
@@ -972,629 +1012,769 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="main-comment py-2">
-                                    <div class="comment-card">
-                                        <div class="d-flex align-items-start">
-                                            <div class="avatar ms-2">
-                                                <img src="./assets/image/avatar.png" alt="avatar">
+                            </div>
+        
+                        </div>
+                        <div class="d-block d-xl-none px-2 px-sm-5 ">
+                            <div class="d-flex mb-6 tag-box flex-wrap">
+                                <div class="tag-section">
+                                    <span class="text-caption">همه</span>
+                                </div>
+                                <div class="tag-section">
+                                    <span class="text-caption">محبوب‌ترین‌ها</span>
+                                </div>
+                                <div class="tag-section">
+                                    <span class="text-caption">پربازدیدترین‌ها</span>
+                                </div>
+                                <div class="tag-section">
+                                    <span class="text-caption">کاردستی کودکانه</span>
+                                </div>
+                            </div>
+                            <div class="normal_container">
+                                <div class="card m-2">
+                                    <div class="header">
+                                        <a href="#">
+                                            <img src="./assets/image/blog-card.png" alt="">
+                                        </a>
+                                        <div class="timer">
+                                            <span class="text-footnote">01:59</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="d-flex mb-2">
+                                            <a href="#">
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title w-full mb-2">
+                                            <a href="#">
+                                                <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                    سطرآنچنان که لازم است</p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0"> 11هزار بازدید</p>
                                             </div>
-                                            <div class="mt-3">
-                                                <div class=" mb-1">
-                                                    <p class="user-name mb-0 text-caption-b">بهنام جعفری</p>
-                                                    <p class="text-comment mb-0 text-caption me-1">لورم ایپسوم متن ساختگی با
-                                                        تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،</p>
-                                                </div>
-                                                <div class="d-flex ">
-                                                    <div class="time text-footnote ">10 ساعت پیش</div>
-                                                    <button class="d-flex border-0 bg-white me-4 align-items-center reply">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
-                                                            viewBox="0 0 16 17" fill="none">
-                                                            <path
-                                                                d="M2 5.93633C2 4.81622 2 4.25617 2.21799 3.82835C2.40973 3.45202 2.71569 3.14606 3.09202 2.95432C3.51984 2.73633 4.0799 2.73633 5.2 2.73633H10.8C11.9201 2.73633 12.4802 2.73633 12.908 2.95432C13.2843 3.14606 13.5903 3.45202 13.782 3.82835C14 4.25617 14 4.81622 14 5.93633V9.53633C14 10.6564 14 11.2165 13.782 11.6443C13.5903 12.0206 13.2843 12.3266 12.908 12.5183C12.4802 12.7363 11.9201 12.7363 10.8 12.7363H9.1225C8.70646 12.7363 8.49845 12.7363 8.29948 12.7772C8.12295 12.8134 7.95213 12.8733 7.79166 12.9553C7.61078 13.0477 7.44834 13.1777 7.12348 13.4375L5.53317 14.7098C5.25578 14.9317 5.11708 15.0427 5.00036 15.0428C4.89885 15.0429 4.80282 14.9967 4.73949 14.9174C4.66667 14.8262 4.66667 14.6486 4.66667 14.2933V12.7363C4.04669 12.7363 3.7367 12.7363 3.48236 12.6682C2.79218 12.4832 2.25308 11.9441 2.06815 11.254C2 10.9996 2 10.6896 2 10.0697V5.93633Z"
-                                                                stroke="black" stroke-opacity="0.65098" stroke-width="1.5"
-                                                                stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                        <span class="text-footnote me-1">
-                                                            پاسخ
-                                                        </span>
-                                                    </button>
-                                                </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                                <div class="card m-2">
+                                    <div class="header">
+                                        <a href="#">
+                                            <img src="./assets/image/blog-card.png" alt="">
+                                        </a>
+                                        <div class="timer">
+                                            <span class="text-footnote">01:59</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="d-flex mb-2">
+                                            <a href="#">
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title w-full mb-2">
+                                            <a href="#">
+                                                <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                    سطرآنچنان که لازم است</p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0"> 11هزار بازدید</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <div class="header">
+                                        <a href="#">
+                                            <img src="./assets/image/blog-card.png" alt="">
+                                        </a>
+                                        <div class="timer">
+                                            <span class="text-footnote">01:59</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="d-flex mb-2">
+                                            <a href="#">
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title w-full mb-2">
+                                            <a href="#">
+                                                <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                    سطرآنچنان که لازم است</p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0"> 11هزار بازدید</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <div class="header">
+                                        <a href="#">
+                                            <img src="./assets/image/blog-card.png" alt="">
+                                        </a>
+                                        <div class="timer">
+                                            <span class="text-footnote">01:59</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="d-flex mb-2">
+                                            <a href="#">
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title w-full mb-2">
+                                            <a href="#">
+                                                <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                    سطرآنچنان که لازم است</p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0"> 11هزار بازدید</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <div class="header">
+                                        <a href="#">
+                                            <img src="./assets/image/blog-card.png" alt="">
+                                        </a>
+                                        <div class="timer">
+                                            <span class="text-footnote">01:59</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="d-flex mb-2">
+                                            <a href="#">
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title w-full mb-2">
+                                            <a href="#">
+                                                <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                    سطرآنچنان که لازم است</p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0"> 11هزار بازدید</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <div class="header">
+                                        <a href="#">
+                                            <img src="./assets/image/blog-card.png" alt="">
+                                        </a>
+                                        <div class="timer">
+                                            <span class="text-footnote">01:59</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="d-flex mb-2">
+                                            <a href="#">
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title w-full mb-2">
+                                            <a href="#">
+                                                <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                    سطرآنچنان که لازم است</p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0"> 11هزار بازدید</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <div class="header">
+                                        <a href="#">
+                                            <img src="./assets/image/blog-card.png" alt="">
+                                        </a>
+                                        <div class="timer">
+                                            <span class="text-footnote">01:59</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="d-flex mb-2">
+                                            <a href="#">
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title w-full mb-2">
+                                            <a href="#">
+                                                <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                    سطرآنچنان که لازم است</p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0"> 11هزار بازدید</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card m-2">
+                                    <div class="header">
+                                        <a href="#">
+                                            <img src="./assets/image/blog-card.png" alt="">
+                                        </a>
+                                        <div class="timer">
+                                            <span class="text-footnote">01:59</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="d-flex mb-2">
+                                            <a href="#">
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title w-full mb-2">
+                                            <a href="#">
+                                                <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                    استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                                    سطرآنچنان که لازم است</p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0"> 11هزار بازدید</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
     
-                    </div>
-                    <div class="d-block d-xl-none px-2 px-sm-5 ">
-                        <div class="d-flex mb-6 tag-box flex-wrap">
-                            <div class="tag-section">
-                                <span class="text-caption">همه</span>
-                            </div>
-                            <div class="tag-section">
-                                <span class="text-caption">محبوب‌ترین‌ها</span>
-                            </div>
-                            <div class="tag-section">
-                                <span class="text-caption">پربازدیدترین‌ها</span>
-                            </div>
-                            <div class="tag-section">
-                                <span class="text-caption">کاردستی کودکانه</span>
-                            </div>
-                        </div>
-                        <div class="normal_container">
-                            <div class="card m-2">
-                                <div class="header">
-                                    <a href="#">
-                                        <img src="./assets/image/blog-card.png" alt="">
-                                    </a>
-                                    <div class="timer">
-                                        <span class="text-footnote">01:59</span>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <div class="d-flex mb-2">
-                                        <a href="#">
-                                            <div class="lable-red">
-                                                <p class="mb-0">کاردستی کودکانه‌</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="title w-full mb-2">
-                                        <a href="#">
-                                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است</p>
-                                        </a>
-                                    </div>
-                                    <div class="info d-flex">
-                                        <div>
-                                           <a href="#"> <p class="mb-0">بهنام جعفری</p></a>
-                                        </div>
-                                        <div class="date">
-                                            <p class="mb-0">31 مرداد 1402</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2">
-                                <div class="header">
-                                    <a href="#">
-                                        <img src="./assets/image/blog-card.png" alt="">
-                                    </a>
-                                    <div class="timer">
-                                        <span class="text-footnote">01:59</span>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <div class="d-flex mb-2">
-                                        <a href="#">
-                                            <div class="lable-red">
-                                                <p class="mb-0">کاردستی کودکانه‌</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="title w-full mb-2">
-                                        <a href="#">
-                                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است</p>
-                                        </a>
-                                    </div>
-                                    <div class="info d-flex">
-                                        <div>
-                                           <a href="#"> <p class="mb-0">بهنام جعفری</p></a>
-                                        </div>
-                                        <div class="date">
-                                            <p class="mb-0">31 مرداد 1402</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2">
-                                <div class="header">
-                                    <a href="#">
-                                        <img src="./assets/image/blog-card.png" alt="">
-                                    </a>
-                                    <div class="timer">
-                                        <span class="text-footnote">01:59</span>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <div class="d-flex mb-2">
-                                        <a href="#">
-                                            <div class="lable-red">
-                                                <p class="mb-0">کاردستی کودکانه‌</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="title w-full mb-2">
-                                        <a href="#">
-                                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است</p>
-                                        </a>
-                                    </div>
-                                    <div class="info d-flex">
-                                        <div>
-                                           <a href="#"> <p class="mb-0">بهنام جعفری</p></a>
-                                        </div>
-                                        <div class="date">
-                                            <p class="mb-0">31 مرداد 1402</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2">
-                                <div class="header">
-                                    <a href="#">
-                                        <img src="./assets/image/blog-card.png" alt="">
-                                    </a>
-                                    <div class="timer">
-                                        <span class="text-footnote">01:59</span>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <div class="d-flex mb-2">
-                                        <a href="#">
-                                            <div class="lable-red">
-                                                <p class="mb-0">کاردستی کودکانه‌</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="title w-full mb-2">
-                                        <a href="#">
-                                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است</p>
-                                        </a>
-                                    </div>
-                                    <div class="info d-flex">
-                                        <div>
-                                           <a href="#"> <p class="mb-0">بهنام جعفری</p></a>
-                                        </div>
-                                        <div class="date">
-                                            <p class="mb-0">31 مرداد 1402</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2">
-                                <div class="header">
-                                    <a href="#">
-                                        <img src="./assets/image/blog-card.png" alt="">
-                                    </a>
-                                    <div class="timer">
-                                        <span class="text-footnote">01:59</span>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <div class="d-flex mb-2">
-                                        <a href="#">
-                                            <div class="lable-red">
-                                                <p class="mb-0">کاردستی کودکانه‌</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="title w-full mb-2">
-                                        <a href="#">
-                                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است</p>
-                                        </a>
-                                    </div>
-                                    <div class="info d-flex">
-                                        <div>
-                                           <a href="#"> <p class="mb-0">بهنام جعفری</p></a>
-                                        </div>
-                                        <div class="date">
-                                            <p class="mb-0">31 مرداد 1402</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2">
-                                <div class="header">
-                                    <a href="#">
-                                        <img src="./assets/image/blog-card.png" alt="">
-                                    </a>
-                                    <div class="timer">
-                                        <span class="text-footnote">01:59</span>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <div class="d-flex mb-2">
-                                        <a href="#">
-                                            <div class="lable-red">
-                                                <p class="mb-0">کاردستی کودکانه‌</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="title w-full mb-2">
-                                        <a href="#">
-                                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است</p>
-                                        </a>
-                                    </div>
-                                    <div class="info d-flex">
-                                        <div>
-                                           <a href="#"> <p class="mb-0">بهنام جعفری</p></a>
-                                        </div>
-                                        <div class="date">
-                                            <p class="mb-0">31 مرداد 1402</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2">
-                                <div class="header">
-                                    <a href="#">
-                                        <img src="./assets/image/blog-card.png" alt="">
-                                    </a>
-                                    <div class="timer">
-                                        <span class="text-footnote">01:59</span>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <div class="d-flex mb-2">
-                                        <a href="#">
-                                            <div class="lable-red">
-                                                <p class="mb-0">کاردستی کودکانه‌</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="title w-full mb-2">
-                                        <a href="#">
-                                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است</p>
-                                        </a>
-                                    </div>
-                                    <div class="info d-flex">
-                                        <div>
-                                           <a href="#"> <p class="mb-0">بهنام جعفری</p></a>
-                                        </div>
-                                        <div class="date">
-                                            <p class="mb-0">31 مرداد 1402</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card m-2">
-                                <div class="header">
-                                    <a href="#">
-                                        <img src="./assets/image/blog-card.png" alt="">
-                                    </a>
-                                    <div class="timer">
-                                        <span class="text-footnote">01:59</span>
-                                    </div>
-                                </div>
-                                <div class="body">
-                                    <div class="d-flex mb-2">
-                                        <a href="#">
-                                            <div class="lable-red">
-                                                <p class="mb-0">کاردستی کودکانه‌</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="title w-full mb-2">
-                                        <a href="#">
-                                            <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                                سطرآنچنان که لازم است</p>
-                                        </a>
-                                    </div>
-                                    <div class="info d-flex">
-                                        <div>
-                                           <a href="#"> <p class="mb-0">بهنام جعفری</p></a>
-                                        </div>
-                                        <div class="date">
-                                            <p class="mb-0">31 مرداد 1402</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <aside class="me-xxl-10 me-8 d-none d-xl-block">
+                    <div class="d-flex mb-6 tag-box flex-wrap">
+                        <div class="tag-section">
+                            <span class="text-caption">همه</span>
+                        </div>
+                        <div class="tag-section">
+                            <span class="text-caption">محبوب‌ترین‌ها</span>
+                        </div>
+                        <div class="tag-section">
+                            <span class="text-caption">پربازدیدترین‌ها</span>
+                        </div>
+                        <div class="tag-section">
+                            <span class="text-caption">کاردستی کودکانه</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="horizontal-card mb-2">
+                            <div class="right-side">
+                                <a href="#"> <!--this product link-->
+                                    <img src="../assets/image/result.png" alt="">
+                                    <div class="timer">
+                                        <span class="text-footnote">01:59</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="left-side">
+                                <div class="d-flex">
+                                    <a href="#"> <!-- Related category -->
+                                        <div class="lable-red">
+                                            <p class="mb-0">کاردستی کودکانه‌</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="title my-1 w-100">
+                                    <a href="#"> <!--this product link-->
+                                        <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                            ریختنی...
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="info d-flex">
+                                    <div>
+                                        <p class="mb-0"> ۱۱هزاربازدید</p>
+                                    </div>
+                                    <div class="date">
+                                        <p class="mb-0">31 مرداد 1402</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-card mb-2">
+                            <div class="right-side">
+                                <a href="#"> <!--this product link-->
+                                    <img src="../assets/image/result.png" alt="">
+                                    <div class="timer">
+                                        <span class="text-footnote">01:59</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="left-side">
+                                <div class="d-flex">
+                                    <a href="#"> <!-- Related category -->
+                                        <div class="lable-red">
+                                            <p class="mb-0">کاردستی کودکانه‌</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="title my-1 w-100">
+                                    <a href="#"> <!--this product link-->
+                                        <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                            ریختنی...
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="info d-flex">
+                                    <div>
+                                        <p class="mb-0"> ۱۱هزاربازدید</p>
+                                    </div>
+                                    <div class="date">
+                                        <p class="mb-0">31 مرداد 1402</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-card mb-2">
+                            <div class="right-side">
+                                <a href="#"> <!--this product link-->
+                                    <img src="../assets/image/result.png" alt="">
+                                    <div class="timer">
+                                        <span class="text-footnote">01:59</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="left-side">
+                                <div class="d-flex">
+                                    <a href="#"> <!-- Related category -->
+                                        <div class="lable-red">
+                                            <p class="mb-0">کاردستی کودکانه‌</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="title my-1 w-100">
+                                    <a href="#"> <!--this product link-->
+                                        <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                            ریختنی...
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="info d-flex">
+                                    <div>
+                                        <p class="mb-0"> ۱۱هزاربازدید</p>
+                                    </div>
+                                    <div class="date">
+                                        <p class="mb-0">31 مرداد 1402</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-card mb-2">
+                            <div class="right-side">
+                                <a href="#"> <!--this product link-->
+                                    <img src="../assets/image/result.png" alt="">
+                                    <div class="timer">
+                                        <span class="text-footnote">01:59</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="left-side">
+                                <div class="d-flex">
+                                    <a href="#"> <!-- Related category -->
+                                        <div class="lable-red">
+                                            <p class="mb-0">کاردستی کودکانه‌</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="title my-1 w-100">
+                                    <a href="#"> <!--this product link-->
+                                        <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                            ریختنی...
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="info d-flex">
+                                    <div>
+                                        <p class="mb-0"> ۱۱هزاربازدید</p>
+                                    </div>
+                                    <div class="date">
+                                        <p class="mb-0">31 مرداد 1402</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-card mb-2">
+                            <div class="right-side">
+                                <a href="#"> <!--this product link-->
+                                    <img src="../assets/image/result.png" alt="">
+                                    <div class="timer">
+                                        <span class="text-footnote">01:59</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="left-side">
+                                <div class="d-flex">
+                                    <a href="#"> <!-- Related category -->
+                                        <div class="lable-red">
+                                            <p class="mb-0">کاردستی کودکانه‌</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="title my-1 w-100">
+                                    <a href="#"> <!--this product link-->
+                                        <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                            ریختنی...
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="info d-flex">
+                                    <div>
+                                        <p class="mb-0"> ۱۱هزاربازدید</p>
+                                    </div>
+                                    <div class="date">
+                                        <p class="mb-0">31 مرداد 1402</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-card mb-2">
+                            <div class="right-side">
+                                <a href="#"> <!--this product link-->
+                                    <img src="../assets/image/result.png" alt="">
+                                    <div class="timer">
+                                        <span class="text-footnote">01:59</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="left-side">
+                                <div class="d-flex">
+                                    <a href="#"> <!-- Related category -->
+                                        <div class="lable-red">
+                                            <p class="mb-0">کاردستی کودکانه‌</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="title my-1 w-100">
+                                    <a href="#"> <!--this product link-->
+                                        <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                            ریختنی...
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="info d-flex">
+                                    <div>
+                                        <p class="mb-0"> ۱۱هزاربازدید</p>
+                                    </div>
+                                    <div class="date">
+                                        <p class="mb-0">31 مرداد 1402</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-card mb-2">
+                            <div class="right-side">
+                                <a href="#"> <!--this product link-->
+                                    <img src="../assets/image/result.png" alt="">
+                                    <div class="timer">
+                                        <span class="text-footnote">01:59</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="left-side">
+                                <div class="d-flex">
+                                    <a href="#"> <!-- Related category -->
+                                        <div class="lable-red">
+                                            <p class="mb-0">کاردستی کودکانه‌</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="title my-1 w-100">
+                                    <a href="#"> <!--this product link-->
+                                        <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                            ریختنی...
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="info d-flex">
+                                    <div>
+                                        <p class="mb-0"> ۱۱هزاربازدید</p>
+                                    </div>
+                                    <div class="date">
+                                        <p class="mb-0">31 مرداد 1402</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <aside class="me-xxl-10 me-8 d-none d-xl-block">
-                <div class="d-flex mb-6 tag-box flex-wrap">
-                    <div class="tag-section">
-                        <span class="text-caption">همه</span>
-                    </div>
-                    <div class="tag-section">
-                        <span class="text-caption">محبوب‌ترین‌ها</span>
-                    </div>
-                    <div class="tag-section">
-                        <span class="text-caption">پربازدیدترین‌ها</span>
-                    </div>
-                    <div class="tag-section">
-                        <span class="text-caption">کاردستی کودکانه</span>
-                    </div>
-                </div>
-                <div>
-                    <div class="horizontal-card mb-2">
-                        <div class="right-side">
-                            <a href="#"> <!--this product link-->
-                                <img src="../assets/image/result.png" alt="">
-                                <div class="timer">
-                                    <span class="text-footnote">01:59</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="left-side">
-                            <div class="d-flex">
-                                <a href="#"> <!-- Related category -->
-                                    <div class="lable-red">
-                                        <p class="mb-0">کاردستی کودکانه‌</p>
+            <section class="modals">
+                <!-- modal share -->
+                <div class="modal fade" id="modal-shaer" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content p-6">
+                            <div data-bs-dismiss="modal" aria-label="Close" class="courser-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M17 7L7 17M7 7L17 17" stroke="#253858" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="modal-body p-4">
+                                <div class="shaer-box">
+                                    <p class="mb-0 title  "> اشتراک گذاری</p>
+                                    <p class="mb-6  text">این محصول را با دوستان خود به اشتراک بگذارید</p>
+                                    <div class="d-flex">
+                                        <button class="btn-share d-flex align-items-center justify-content-center p-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                viewBox="0 0 25 24" fill="none">
+                                                <path
+                                                    d="M8.5 8V5.2C8.5 4.0799 8.5 3.51984 8.71799 3.09202C8.90973 2.71569 9.21569 2.40973 9.59202 2.21799C10.0198 2 10.5799 2 11.7 2H19.3C20.4201 2 20.9802 2 21.408 2.21799C21.7843 2.40973 22.0903 2.71569 22.282 3.09202C22.5 3.51984 22.5 4.0799 22.5 5.2V12.8C22.5 13.9201 22.5 14.4802 22.282 14.908C22.0903 15.2843 21.7843 15.5903 21.408 15.782C20.9802 16 20.4201 16 19.3 16H16.5M5.7 22H13.3C14.4201 22 14.9802 22 15.408 21.782C15.7843 21.5903 16.0903 21.2843 16.282 20.908C16.5 20.4802 16.5 19.9201 16.5 18.8V11.2C16.5 10.0799 16.5 9.51984 16.282 9.09202C16.0903 8.71569 15.7843 8.40973 15.408 8.21799C14.9802 8 14.4201 8 13.3 8H5.7C4.5799 8 4.01984 8 3.59202 8.21799C3.21569 8.40973 2.90973 8.71569 2.71799 9.09202C2.5 9.51984 2.5 10.0799 2.5 11.2V18.8C2.5 19.9201 2.5 20.4802 2.71799 20.908C2.90973 21.2843 3.21569 21.5903 3.59202 21.782C4.01984 22 4.57989 22 5.7 22Z"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            <p class="mb-0 me-2 text-small">کپی لینک محصول</p>
+                                        </button>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="title my-1 w-100">
-                                <a href="#"> <!--this product link-->
-                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
-                                        ریختنی...
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="info d-flex">
-                                <div>
-                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
-                                </div>
-                                <div class="date">
-                                    <p class="mb-0">31 مرداد 1402</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="horizontal-card mb-2">
-                        <div class="right-side">
-                            <a href="#"> <!--this product link-->
-                                <img src="../assets/image/result.png" alt="">
-                                <div class="timer">
-                                    <span class="text-footnote">01:59</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="left-side">
-                            <div class="d-flex">
-                                <a href="#"> <!-- Related category -->
-                                    <div class="lable-red">
-                                        <p class="mb-0">کاردستی کودکانه‌</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="title my-1 w-100">
-                                <a href="#"> <!--this product link-->
-                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
-                                        ریختنی...
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="info d-flex">
-                                <div>
-                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
-                                </div>
-                                <div class="date">
-                                    <p class="mb-0">31 مرداد 1402</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="horizontal-card mb-2">
-                        <div class="right-side">
-                            <a href="#"> <!--this product link-->
-                                <img src="../assets/image/result.png" alt="">
-                                <div class="timer">
-                                    <span class="text-footnote">01:59</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="left-side">
-                            <div class="d-flex">
-                                <a href="#"> <!-- Related category -->
-                                    <div class="lable-red">
-                                        <p class="mb-0">کاردستی کودکانه‌</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="title my-1 w-100">
-                                <a href="#"> <!--this product link-->
-                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
-                                        ریختنی...
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="info d-flex">
-                                <div>
-                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
-                                </div>
-                                <div class="date">
-                                    <p class="mb-0">31 مرداد 1402</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="horizontal-card mb-2">
-                        <div class="right-side">
-                            <a href="#"> <!--this product link-->
-                                <img src="../assets/image/result.png" alt="">
-                                <div class="timer">
-                                    <span class="text-footnote">01:59</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="left-side">
-                            <div class="d-flex">
-                                <a href="#"> <!-- Related category -->
-                                    <div class="lable-red">
-                                        <p class="mb-0">کاردستی کودکانه‌</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="title my-1 w-100">
-                                <a href="#"> <!--this product link-->
-                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
-                                        ریختنی...
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="info d-flex">
-                                <div>
-                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
-                                </div>
-                                <div class="date">
-                                    <p class="mb-0">31 مرداد 1402</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="horizontal-card mb-2">
-                        <div class="right-side">
-                            <a href="#"> <!--this product link-->
-                                <img src="../assets/image/result.png" alt="">
-                                <div class="timer">
-                                    <span class="text-footnote">01:59</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="left-side">
-                            <div class="d-flex">
-                                <a href="#"> <!-- Related category -->
-                                    <div class="lable-red">
-                                        <p class="mb-0">کاردستی کودکانه‌</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="title my-1 w-100">
-                                <a href="#"> <!--this product link-->
-                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
-                                        ریختنی...
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="info d-flex">
-                                <div>
-                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
-                                </div>
-                                <div class="date">
-                                    <p class="mb-0">31 مرداد 1402</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="horizontal-card mb-2">
-                        <div class="right-side">
-                            <a href="#"> <!--this product link-->
-                                <img src="../assets/image/result.png" alt="">
-                                <div class="timer">
-                                    <span class="text-footnote">01:59</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="left-side">
-                            <div class="d-flex">
-                                <a href="#"> <!-- Related category -->
-                                    <div class="lable-red">
-                                        <p class="mb-0">کاردستی کودکانه‌</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="title my-1 w-100">
-                                <a href="#"> <!--this product link-->
-                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
-                                        ریختنی...
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="info d-flex">
-                                <div>
-                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
-                                </div>
-                                <div class="date">
-                                    <p class="mb-0">31 مرداد 1402</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="horizontal-card mb-2">
-                        <div class="right-side">
-                            <a href="#"> <!--this product link-->
-                                <img src="../assets/image/result.png" alt="">
-                                <div class="timer">
-                                    <span class="text-footnote">01:59</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="left-side">
-                            <div class="d-flex">
-                                <a href="#"> <!-- Related category -->
-                                    <div class="lable-red">
-                                        <p class="mb-0">کاردستی کودکانه‌</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="title my-1 w-100">
-                                <a href="#"> <!--this product link-->
-                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
-                                        ریختنی...
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="info d-flex">
-                                <div>
-                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
-                                </div>
-                                <div class="date">
-                                    <p class="mb-0">31 مرداد 1402</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="horizontal-card mb-2">
-                        <div class="right-side">
-                            <a href="#"> <!--this product link-->
-                                <img src="../assets/image/result.png" alt="">
-                                <div class="timer">
-                                    <span class="text-footnote">01:59</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="left-side">
-                            <div class="d-flex">
-                                <a href="#"> <!-- Related category -->
-                                    <div class="lable-red">
-                                        <p class="mb-0">کاردستی کودکانه‌</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="title my-1 w-100">
-                                <a href="#"> <!--this product link-->
-                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
-                                        ریختنی...
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="info d-flex">
-                                <div>
-                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
-                                </div>
-                                <div class="date">
-                                    <p class="mb-0">31 مرداد 1402</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </aside>
+            </section>
+            <section class="navbar-btn px-sm-6 px-3  py-4 d-block d-lg-none ">
+                <div class="blog-navbar d-flex justify-content-between align-items-center">
+                    <a href="#comment-box" class="d-flex justify-content-center" style="flex:1">
+                        <button class="bg-white border-0 me-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                fill="none">
+                                <path
+                                    d="M4 10.4C4 8.15979 4 7.03968 4.43597 6.18404C4.81947 5.43139 5.43139 4.81947 6.18404 4.43597C7.03969 4 8.15979 4 10.4 4H21.6C23.8402 4 24.9603 4 25.816 4.43597C26.5686 4.81947 27.1805 5.43139 27.564 6.18404C28 7.03968 28 8.15979 28 10.4V17.6C28 19.8402 28 20.9603 27.564 21.816C27.1805 22.5686 26.5686 23.1805 25.816 23.564C24.9603 24 23.8402 24 21.6 24H18.245C17.4129 24 16.9969 24 16.599 24.0817C16.2459 24.1541 15.9043 24.274 15.5833 24.4379C15.2216 24.6228 14.8967 24.8826 14.247 25.4024L11.0663 27.9469C10.5116 28.3908 10.2342 28.6127 10.0007 28.6129C9.79769 28.6131 9.60563 28.5208 9.47897 28.3622C9.33333 28.1797 9.33333 27.8245 9.33333 27.114V24C8.09337 24 7.47339 24 6.96472 23.8637C5.58436 23.4938 4.50617 22.4156 4.1363 21.0353C4 20.5266 4 19.9066 4 18.6667V10.4Z"
+                                    stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </a>
+                    <button class="bg-white border-0 me-8 d-flex justify-content-center" style="flex:1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none">
+                            <path
+                                d="M6.66797 10.4C6.66797 8.15979 6.66797 7.03969 7.10394 6.18404C7.48744 5.43139 8.09936 4.81947 8.85201 4.43597C9.70765 4 10.8278 4 13.068 4H18.9346C21.1748 4 22.295 4 23.1506 4.43597C23.9032 4.81947 24.5152 5.43139 24.8987 6.18404C25.3346 7.03969 25.3346 8.15979 25.3346 10.4V28L16.0013 22.6667L6.66797 28V10.4Z"
+                                stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="bg-white border-0 me-8 d-flex justify-content-center" style="flex:1"  data-bs-toggle="offcanvas"
+                    data-bs-target="#shaer-offcanvas" aria-controls="offcanvasBottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                            fill="none">
+                            <path
+                                d="M11.4533 18.0133L20.56 23.32M20.5467 8.67999L11.4533 13.9867M28 6.66666C28 8.8758 26.2091 10.6667 24 10.6667C21.7909 10.6667 20 8.8758 20 6.66666C20 4.45752 21.7909 2.66666 24 2.66666C26.2091 2.66666 28 4.45752 28 6.66666ZM12 16C12 18.2091 10.2091 20 8 20C5.79086 20 4 18.2091 4 16C4 13.7909 5.79086 12 8 12C10.2091 12 12 13.7909 12 16ZM28 25.3333C28 27.5425 26.2091 29.3333 24 29.3333C21.7909 29.3333 20 27.5425 20 25.3333C20 23.1242 21.7909 21.3333 24 21.3333C26.2091 21.3333 28 23.1242 28 25.3333Z"
+                                stroke="black" stroke-opacity="0.65098" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- all offcanvas  -->
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="shaer-offcanvas"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header py-2">
+                        <div></div>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="shaer-box">
+                            <div class="title-container py-3 mx-4">
+                                <p class="mb-0 title text-center "> اشتراک گذاری</p>
+                            </div>
+                            <p class="mb-6 mt-4 text text-center">این محصول را با دوستان خود به اشتراک بگذارید</p>
+                            <div class="d-flex" style="gap: 8px;">
+                                <button class="btn-share d-flex align-items-center justify-content-center p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                        viewBox="0 0 25 24" fill="none">
+                                        <path
+                                            d="M8.5 8V5.2C8.5 4.0799 8.5 3.51984 8.71799 3.09202C8.90973 2.71569 9.21569 2.40973 9.59202 2.21799C10.0198 2 10.5799 2 11.7 2H19.3C20.4201 2 20.9802 2 21.408 2.21799C21.7843 2.40973 22.0903 2.71569 22.282 3.09202C22.5 3.51984 22.5 4.0799 22.5 5.2V12.8C22.5 13.9201 22.5 14.4802 22.282 14.908C22.0903 15.2843 21.7843 15.5903 21.408 15.782C20.9802 16 20.4201 16 19.3 16H16.5M5.7 22H13.3C14.4201 22 14.9802 22 15.408 21.782C15.7843 21.5903 16.0903 21.2843 16.282 20.908C16.5 20.4802 16.5 19.9201 16.5 18.8V11.2C16.5 10.0799 16.5 9.51984 16.282 9.09202C16.0903 8.71569 15.7843 8.40973 15.408 8.21799C14.9802 8 14.4201 8 13.3 8H5.7C4.5799 8 4.01984 8 3.59202 8.21799C3.21569 8.40973 2.90973 8.71569 2.71799 9.09202C2.5 9.51984 2.5 10.0799 2.5 11.2V18.8C2.5 19.9201 2.5 20.4802 2.71799 20.908C2.90973 21.2843 3.21569 21.5903 3.59202 21.782C4.01984 22 4.57989 22 5.7 22Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="mb-0 me-2 text-caption">کپی لینک محصول</p>
+                                </button>
+                                <button class="btn-message d-flex align-items-center justify-content-center p-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M7 8.5H12M7 12H15M7 18V20.3355C7 20.8684 7 21.1348 7.10923 21.2716C7.20422 21.3906 7.34827 21.4599 7.50054 21.4597C7.67563 21.4595 7.88367 21.2931 8.29976 20.9602L10.6852 19.0518C11.1725 18.662 11.4162 18.4671 11.6875 18.3285C11.9282 18.2055 12.1844 18.1156 12.4492 18.0613C12.7477 18 13.0597 18 13.6837 18H16.2C17.8802 18 18.7202 18 19.362 17.673C19.9265 17.3854 20.3854 16.9265 20.673 16.362C21 15.7202 21 14.8802 21 13.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V14C3 14.93 3 15.395 3.10222 15.7765C3.37962 16.8117 4.18827 17.6204 5.22354 17.8978C5.60504 18 6.07003 18 7 18Z" stroke="#00091A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p class="mb-0 me-2 text-caption"> پیامک</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <!-- footer -->
+        <footer  style="margin-top: 200px;">
+                    <div class="footer-container">
+                        <div class="p-xxl-10 p-lg-5 p-sm-6 px-3 py-6 d-flex justify-content-between flex-column flex-lg-row">
+                            <div class="logo ms-2 mb-5 mb-lg-0">
+                                <a href="#">
+                                    <img src="./assets/image/svg/logo.svg" alt="" class="w-100 h-100">
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-md-between  menu-links flex-column flex-sm-row flex-wrap">
+                                <div>
+                                    <p>کاغذرنگی</p>
+                                    <ul class="p-0">
+                                        <li>
+                                            <a href="#">داستان کاغذرنگی</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">فرصت‌های شغلی</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                تماس با ما
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                گزارش خطای فنی
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p>پشتیبانی و آموزش</p>
+                                    <ul class="p-0">
+                                        <li>
+                                            <a href="#">آموزش</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">فروشگاه</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">سوالات متدوال</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>شرایط و قوانین</p>
+                                    <ul class="p-0">
+                                        <li>
+                                            <a href="#">قوانین و شرایط استفاده</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                حفظ اطلاعات و حریم خصوصی
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <p>کاغذرنگی در شبکه‌های اجتماعی</p>
+                                <div class="icon-box d-flex">
+                                    <div>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z" stroke="#253858" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M11.3996 9.5003L13.8996 11.0003C14.7996 11.6003 14.7996 12.5003 13.8996 13.1003L11.3996 14.6003C10.3996 15.2003 9.59961 14.7003 9.59961 13.6003V10.6003C9.59961 9.3003 10.3996 8.9003 11.3996 9.5003Z" stroke="#253858" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7.39969 6.32015L15.8897 3.49015C19.6997 2.22015 21.7697 4.30015 20.5097 8.11015L17.6797 16.6002C15.7797 22.3102 12.6597 22.3102 10.7597 16.6002L9.91969 14.0802L7.39969 13.2402C1.68969 11.3402 1.68969 8.23015 7.39969 6.32015Z" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10.1104 13.6496L13.6904 10.0596" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 15.5C13.933 15.5 15.5 13.933 15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5Z" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M17.6361 7H17.6477" stroke="#253858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M22 3.47059V20.5294C22 20.9194 21.8451 21.2935 21.5693 21.5693C21.2935 21.8451 20.9194 22 20.5294 22H3.47059C3.08056 22 2.70651 21.8451 2.43073 21.5693C2.15494 21.2935 2 20.9194 2 20.5294V3.47059C2 3.08056 2.15494 2.70651 2.43073 2.43073C2.70651 2.15494 3.08056 2 3.47059 2H20.5294C20.9194 2 21.2935 2.15494 21.5693 2.43073C21.8451 2.70651 22 3.08056 22 3.47059ZM7.88235 9.64706H4.94118V19.0588H7.88235V9.64706ZM8.14706 6.41177C8.14861 6.18929 8.10632 5.96869 8.02261 5.76255C7.93891 5.55642 7.81542 5.36879 7.65919 5.21039C7.50297 5.05198 7.31708 4.92589 7.11213 4.83933C6.90718 4.75277 6.68718 4.70742 6.46471 4.70588H6.41177C5.95934 4.70588 5.52544 4.88561 5.20552 5.20552C4.88561 5.52544 4.70588 5.95934 4.70588 6.41177C4.70588 6.86419 4.88561 7.29809 5.20552 7.61801C5.52544 7.93792 5.95934 8.11765 6.41177 8.11765C6.63426 8.12312 6.85565 8.0847 7.06328 8.00458C7.27092 7.92447 7.46074 7.80422 7.62189 7.65072C7.78304 7.49722 7.91237 7.31346 8.00248 7.10996C8.09259 6.90646 8.14172 6.6872 8.14706 6.46471V6.41177ZM19.0588 13.3412C19.0588 10.5118 17.2588 9.41177 15.4706 9.41177C14.8851 9.38245 14.3021 9.50715 13.7799 9.77345C13.2576 10.0397 12.8143 10.4383 12.4941 10.9294H12.4118V9.64706H9.64706V19.0588H12.5882V14.0529C12.5457 13.5403 12.7072 13.0315 13.0376 12.6372C13.3681 12.2429 13.8407 11.9949 14.3529 11.9471H14.4647C15.4 11.9471 16.0941 12.5353 16.0941 14.0176V19.0588H19.0353L19.0588 13.3412Z" fill="#253858"/>
+                                              </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 py-4 bot">
+                        <p class="mb-0 text-center">تمامی حقوق این سایت برای کاغذرنگی محفوظ است.</p>
+                    </div>
+        </footer>
     </div>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/shared.js"></script>
-    <script src="./assets/js/pages/single-blog.js"></script>
+    <script src="./assets/js/pages/single-video.js"></script>
 </body>
 
 </html>

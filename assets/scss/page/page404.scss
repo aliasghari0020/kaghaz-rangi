@@ -1,0 +1,94 @@
+@use "../components/typography" as *;
+
+
+$icon-404-width: (
+    desktop:384px,
+    tablet:312px,
+    mobile:240px,
+);
+
+$bg404width: (
+    desktop:575px,
+    tablet:432px,
+    mobile:300px,
+);
+
+@mixin bg404($device) {
+    width: map-get($bg404width, $device);
+    background: url('./assets/image/bg-404.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+@mixin icon404($size){
+    width: map-get($icon-404-width, $size);
+    height:map-get($icon-404-width, $size);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.page-404 {
+   .bg-404{
+    @include bg404(mobile);
+    .icon-404{
+       @include icon404(mobile)
+    }
+    .text-404{
+        color: var(--Neutral-Dark-N700, #253858);
+    }
+    h1{
+        @include heading-style(h6)
+    }
+    .text{
+        @include text-body-style(body,normal ); // normal text subTitle
+     }
+   }
+}
+
+
+@media screen and (min-width:480px) {
+    .page-404 {
+        .bg-404{
+         @include bg404(tablet);
+         .icon-404{
+            @include icon404(tablet)
+         }
+         h1{
+            @include heading-style(h4)
+        }
+         .text{
+            @include text-body-style(subTitle,normal ); // normal text subTitle
+         }
+        }
+     }     
+
+};
+
+@media screen and (min-width:1024px) {
+    .page-404 {
+        .bg-404{
+         @include bg404(desktop);
+         .icon-404{
+            @include icon404(desktop)
+         }
+         .text-404{
+            color: var(--Neutral-Dark-N700, #253858);
+        }
+        h1{
+            @include heading-style(h3)
+        }
+         .text{
+             @include text-body-style(title,normal );
+             font-weight: 950; // text ExtraBlack 
+         }
+        }
+     }     
+
+};
+
+
+
+// 

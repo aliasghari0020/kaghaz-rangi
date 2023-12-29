@@ -41,6 +41,20 @@
         right: 16px;
     }   
 
+    .swiper-pagination-bullet{
+        width: 12px;
+        height:12px;
+        background: #FFFAF0;
+        opacity: 0.5;
+    } 
+
+    .swiper-pagination-bullet-active{
+        background: #FA7083;
+        opacity: 1;
+    }
+
+
+
     &:hover #slider-prev , &:hover #slider-next{
         opacity: 1;
         transition: opacity 0.3s;
@@ -61,5 +75,9 @@
 @media screen and (max-width: 480px) {
     #slider {
         height: 280px;
+        .swiper-pagination-bullet{
+            width: 8px;
+            height: 8px;
+        } 
     }
 }

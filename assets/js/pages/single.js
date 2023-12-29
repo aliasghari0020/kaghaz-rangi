@@ -2,22 +2,22 @@
 
 
 
-function createTextFild(isSubComment) {
-    const textFild = document.createElement('div');
-    const classes = isSubComment ? "d-flex align-items-center comment-fild py-4" : "d-flex align-items-center comment-fild py-4 pe-14";
-    textFild.setAttribute('class', classes);
-    textFild.innerHTML = `
-        <div class="avatar ms-2"><img src="./assets/image/avatar.png" alt="avatar"></div>
-        <form action="" class="w-100 text-fild active " >
-        <input type="text" placeholder="نظر خود را بنویسید..." class="  text-caption w-100">
-        <div class=" justify-content-end mt-1">
-            <button class="colse border-0 bg-white text-caption  px-2  ">انصراف</button>
-            <button class="send-comment border-0 bg-white text-caption px-2  me-1 ">ارسال نظر</button>
-        </div>
-    </form>
-    `;
-    return textFild;
-}
+// function createTextFild(isSubComment) {
+//     const textFild = document.createElement('div');
+//     const classes = isSubComment ? "d-flex align-items-center comment-fild py-4" : "d-flex align-items-center comment-fild py-4 pe-14";
+//     textFild.setAttribute('class', classes);
+//     textFild.innerHTML = `
+//         <div class="avatar ms-2"><img src="./assets/image/avatar.png" alt="avatar"></div>
+//         <form action="" class="w-100 text-fild active " >
+//         <input type="text" placeholder="نظر خود را بنویسید..." class="  text-caption w-100">
+//         <div class=" justify-content-end mt-1">
+//             <button class="colse border-0 bg-white text-caption  px-2  ">انصراف</button>
+//             <button class="send-comment border-0 bg-white text-caption px-2  me-1 ">ارسال نظر</button>
+//         </div>
+//     </form>
+//     `;
+//     return textFild;
+// }
 
 
 function addTextFildToCommentCard(commentCard) {
