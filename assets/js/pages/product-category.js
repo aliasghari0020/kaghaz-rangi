@@ -22,4 +22,22 @@ options.forEach((option) => {
 
 const specialSlider = specialSwiperSlider("#product-crousle-special");
 
-const spectialSliderBtn = activeCLickSpecialSlider(".content  .btn-slide")
+const spectialSliderBtn = activeCLickSpecialSlider(".content  .btn-slide");
+
+
+
+
+
+
+  document.querySelector('.show-content ').addEventListener('click',()=>{
+    document.querySelector(" .description .content").classList.toggle('show');
+    if(document.querySelector(" .description .content").classList.contains('show')){
+        document.querySelector('.show-content svg').setAttribute( 'style','transform:rotate(180deg)');
+        document.querySelector(".show-content  p").innerHTML="بستن توضیحات";
+
+    }else{
+        document.querySelector('.show-content svg').setAttribute( 'style','transform:rotate(0deg)');
+        document.querySelector(".show-content  p").innerHTML=" نمایش توضیحات";
+
+    }
+})

@@ -21,11 +21,13 @@
                         <img src="./assets/image/svg/logo.svg" alt="logo">
                     </div>
                     <!-- search box -->
-                    <div class="search px-6 py-3 d-lg-flex d-none me-6 position-relative">
-                        <div class="d-flex w-100">
+                    <div class="search px-6 py-3 d-lg-flex d-none me-6 position-relative" data-bs-toggle="collapse"
+                        href="#search-results-collapse" role="button" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <div class="d-flex w-100 container-search">
                             <div class="ms-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
+                                    id="icon-search" fill="none">
                                     <path
                                         d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z"
                                         stroke="#7A869A" stroke-width="2" stroke-linecap="round"
@@ -35,11 +37,12 @@
                             <input class="border-0 w-100 text-main" type="text"
                                 placeholder="کاردستی یا محصول مورد نظرتو پیدا کن!">
                         </div>
-                        <div class="search-results  bg-white border border-1 rounded-bottom-5 border-top-0 px-4 d-none">
+                        <div class="search-results  bg-white border border-1 rounded-bottom-5 border-top-0 px-4  collapse"
+                            id="search-results-collapse">
                             <!-- start search before result -->
-                            <div class="step-1 d-none">
+                            <div class="step-1 d-block ">
                                 <!-- label -->
-                                <div class="py-6  border-1 border-top ">
+                                <div class="py-6 ">
                                     <p class="text-small light-text ">بیشترین عبارات جستجو شده</p>
                                     <a href="#" class="tag-name bg-primary-5 text-footnote ">کاردستی بچگانه</a>
                                     <a href="#" class="tag-name bg-primary-5 text-footnote me-4">کاردستی بچگانه</a>
@@ -57,72 +60,109 @@
                                         </a>
                                     </div>
                                     <!-- card results  -->
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
+                                    <div class="horizontal-card mb-2">
+                                        <div class="right-side">
+                                            <a href="#"> <!--this product link-->
+                                                <img src="./assets/image/result.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="left-side">
+                                            <div class="d-flex">
+                                                <a href="#"> <!-- Related category -->
+                                                    <div class="lable-red">
+                                                        <p class="mb-0">کاردستی کودکانه‌</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="title my-1 w-100">
+                                                <a href="#"> <!--this product link-->
+                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                                        ریختنی...
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="info d-flex">
+                                                <div>
+                                                    <a href="#">
+                                                        <p class="mb-0">بهنام جعفری</p>
+                                                    </a><!-- author link-->
+                                                </div>
+                                                <div class="date">
+                                                    <p class="mb-0">31 مرداد 1402</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-card mb-2">
+                                        <div class="right-side">
+                                            <a href="#"> <!--this product link-->
+                                                <img src="./assets/image/product-1.png" alt="">
+                                                <div class="label">
+                                                    <div class="lable-price">
+                                                        <p class="mb-0">500 هزار تومان</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="left-side">
+                                            <div class="d-flex flex-wrap">
+                                                <a href="#"> <!-- Related category -->
+                                                    <div class="lable-red">
+                                                        <p class="mb-0">کاردستی کودکانه‌</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="title my-1 w-100">
+                                                <a href="#"> <!--this product link-->
+                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="info d-flex">
+                                                <div>
+                                                    <a href="#"><!-- author link-->
+                                                        <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-card mb-2">
+                                        <div class="right-side">
+                                            <a href="#"> <!--this product link-->
                                                 <img src="./assets/image/result.png" alt="">
                                                 <div class="timer">
                                                     <span class="text-tag">01:59</span>
                                                 </div>
+                                            </a>
+                                        </div>
+                                        <div class="left-side">
+                                            <div class="d-flex">
+                                                <a href="#"> <!-- Related category -->
+                                                    <div class="lable-red">
+                                                        <p class="mb-0">کاردستی کودکانه‌</p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
-                                                </div>
-                                                <div class="info d-flex">
-                                                    <div>
+                                            <div class="title my-1 w-100">
+                                                <a href="#"> <!--this product link-->
+                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                                        ریختنی...
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="info d-flex">
+                                                <div>
+                                                    <a href="#">
                                                         <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
+                                                    </a><!-- author link-->
+                                                </div>
+                                                <div class="date">
+                                                    <p class="mb-0">31 مرداد 1402</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
-                                                <img src="./assets/image/result.png" alt="">
-                                                <div class="timer">
-                                                    <span class="text-tag">01:59</span>
-                                                </div>
-                                            </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
-                                                </div>
-                                                <div class="info d-flex">
-                                                    <div>
-                                                        <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
-                                                <img src="./assets/image/result.png" alt="">
-                                            </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
-                                                </div>
-                                                <div class="info d-flex">
-                                                    <div>
-                                                        <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                    </div>
                                 </div>
                                 <div class="mb-4">
                                     <div class="d-flex justify-content-between mb-2">
@@ -132,77 +172,114 @@
                                             <i class="bi bi-chevron-left icon-size-4 me-1"></i>
                                         </a>
                                     </div>
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
-                                                <img src="./assets/image/result.png" alt="">
+                                    <div class="horizontal-card mb-2">
+                                        <div class="right-side">
+                                            <a href="#"> <!--this product link-->
+                                                <img src="../assets/image/result.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="left-side">
+                                            <div class="d-flex">
+                                                <a href="#"> <!-- Related category -->
+                                                    <div class="lable-red">
+                                                        <p class="mb-0">کاردستی کودکانه‌</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="title my-1 w-100">
+                                                <a href="#"> <!--this product link-->
+                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                                        ریختنی...
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="info d-flex">
+                                                <div>
+                                                    <a href="#">
+                                                        <p class="mb-0">بهنام جعفری</p>
+                                                    </a><!-- author link-->
+                                                </div>
+                                                <div class="date">
+                                                    <p class="mb-0">31 مرداد 1402</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-card mb-2">
+                                        <div class="right-side">
+                                            <a href="#"> <!--this product link-->
+                                                <img src="../assets/image/product-1.png" alt="">
+                                                <div class="label">
+                                                    <div class="lable-price">
+                                                        <p class="mb-0">500 هزار تومان</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="left-side">
+                                            <div class="d-flex flex-wrap">
+                                                <a href="#"> <!-- Related category -->
+                                                    <div class="lable-red">
+                                                        <p class="mb-0">کاردستی کودکانه‌</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="title my-1 w-100">
+                                                <a href="#"> <!--this product link-->
+                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="info d-flex">
+                                                <div>
+                                                    <a href="#"><!-- author link-->
+                                                        <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-card mb-2">
+                                        <div class="right-side">
+                                            <a href="#"> <!--this product link-->
+                                                <img src="../assets/image/result.png" alt="">
                                                 <div class="timer">
                                                     <span class="text-tag">01:59</span>
                                                 </div>
+                                            </a>
+                                        </div>
+                                        <div class="left-side">
+                                            <div class="d-flex">
+                                                <a href="#"> <!-- Related category -->
+                                                    <div class="lable-red">
+                                                        <p class="mb-0">کاردستی کودکانه‌</p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
-                                                </div>
-                                                <div class="info d-flex">
-                                                    <div>
+                                            <div class="title my-1 w-100">
+                                                <a href="#"> <!--this product link-->
+                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                                        ریختنی...
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="info d-flex">
+                                                <div>
+                                                    <a href="#">
                                                         <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
+                                                    </a><!-- author link-->
+                                                </div>
+                                                <div class="date">
+                                                    <p class="mb-0">31 مرداد 1402</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
-                                                <img src="./assets/image/result.png" alt="">
-                                                <div class="timer">
-                                                    <span class="text-tag">01:59</span>
-                                                </div>
-                                            </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
-                                                </div>
-                                                <div class="info d-flex">
-                                                    <div>
-                                                        <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
-                                                <img src="./assets/image/result.png" alt="">
-                                            </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
-                                                </div>
-                                                <div class="info d-flex">
-                                                    <div>
-                                                        <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Successful search and search result -->
-                            <div class="d-block">
-                                <div class="py-6  border-1 border-top ">
+                            <div class="step-2 d-none">
+                                <div class="py-6 ">
                                     <div class="d-flex justify-content-between mb-2">
                                         <p class="text-small light-text mb-0"> نتایج جستجو</p>
                                         <a href="#" class="text-caption d-flex align-items-start light-text ">
@@ -210,105 +287,147 @@
                                             <i class="bi bi-chevron-left icon-size-4 me-1"></i>
                                         </a>
                                     </div>
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
-                                                <img src="./assets/image/result.png" alt="">
-                                                <div class="timer">
-                                                    <span class="text-tag">01:59</span>
+
+                                </div>
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <a href="#"> <!--this product link-->
+                                            <img src="./assets/image/result.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="d-flex">
+                                            <a href="#"> <!-- Related category -->
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
                                                 </div>
+                                            </a>
+                                        </div>
+                                        <div class="title my-1 w-100">
+                                            <a href="#"> <!--this product link-->
+                                                <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                                    ریختنی...
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <a href="#">
+                                                    <p class="mb-0">بهنام جعفری</p>
+                                                </a><!-- author link-->
                                             </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
-                                                </div>
-                                                <div class="info d-flex">
-                                                    <div>
-                                                        <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
-                                                </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
-                                                <img src="./assets/image/result.png" alt="">
-                                                <div class="timer">
-                                                    <span class="text-tag">01:59</span>
+                                    </div>
+                                </div>
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <a href="#"> <!--this product link-->
+                                            <img src="./assets/image/product-1.png" alt="">
+                                            <div class="label">
+                                                <div class="lable-price">
+                                                    <p class="mb-0">500 هزار تومان</p>
                                                 </div>
                                             </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
+                                        </a>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="d-flex flex-wrap">
+                                            <a href="#"> <!-- Related category -->
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
                                                 </div>
-                                                <div class="info d-flex">
-                                                    <div>
-                                                        <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
-                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title my-1 w-100">
+                                            <a href="#"> <!--this product link-->
+                                                <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <a href="#"><!-- author link-->
+                                                    <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
+                                                </a>
                                             </div>
                                         </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="horizontal-card mb-2">
-                                            <div class="right-side">
-                                                <img src="./assets/image/result.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <a href="#"> <!--this product link-->
+                                            <img src="./assets/image/result.png" alt="">
+                                            <div class="timer">
+                                                <span class="text-tag">01:59</span>
                                             </div>
-                                            <div class="left-side">
-                                                <div class="title my-1 w-100">
-                                                    <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
+                                        </a>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="d-flex">
+                                            <a href="#"> <!-- Related category -->
+                                                <div class="lable-red">
+                                                    <p class="mb-0">کاردستی کودکانه‌</p>
                                                 </div>
-                                                <div class="info d-flex">
-                                                    <div>
-                                                        <p class="mb-0">بهنام جعفری</p>
-                                                    </div>
-                                                    <div class="date">
-                                                        <p class="mb-0">31 مرداد 1402</p>
-                                                    </div>
-                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title my-1 w-100">
+                                            <a href="#"> <!--this product link-->
+                                                <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور
+                                                    ریختنی...
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <a href="#">
+                                                    <p class="mb-0">بهنام جعفری</p>
+                                                </a><!-- author link-->
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- left side mobile -->
                 <div class="let-side">
                     <!-- desktop -->
                     <div class="d-none d-lg-flex desktop">
-                        <button class="border-0 bg-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <path
-                                    d="M3 20C5.33579 17.5226 8.50702 16 12 16C15.493 16 18.6642 17.5226 21 20M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z"
-                                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <button class="border-0 bg-white  login-btn "  data-bs-toggle="modal" data-bs-target="#login">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </button>
+                        <!-- if login -->
+                        <button class="border-0 bg-white  is-login-btn d-none ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M11 13.5H6.5C5.10444 13.5 4.40665 13.5 3.83886 13.6722C2.56045 14.06 1.56004 15.0605 1.17224 16.3389C1 16.9067 1 17.6044 1 19M15 16L17 18L21 14M13.5 5.5C13.5 7.98528 11.4853 10 9 10C6.51472 10 4.5 7.98528 4.5 5.5C4.5 3.01472 6.51472 1 9 1C11.4853 1 13.5 3.01472 13.5 5.5Z" stroke="#ee4562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12.3001 14.7C12.1001 14.9 11.8001 14.9 11.6001 14.7L7.70011 11.4C7.40011 11.1 7.60011 10.5 8.00011 10.5H15.7001C16.2001 10.5 16.4001 11.1 16.0001 11.4L12.3001 14.7Z" fill="#ee4562"/>
+                              </svg>
                         </button>
                         <div class="line mx-2"></div>
                         <a href="#" class="px-2 py-1 bg-white text-light-text d-flex align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
-                                <path
-                                    d="M9 18.5H15M7 15H17M5 2H19C20.1046 2 21 2.99492 21 4.22222V19.7778C21 21.0051 20.1046 22 19 22H5C3.89543 22 3 21.0051 3 19.7778V4.22222C3 2.99492 3.89543 2 5 2ZM11.9976 6.21194C11.2978 5.4328 10.1309 5.22321 9.25414 5.93667C8.37738 6.65013 8.25394 7.84299 8.94247 8.6868C9.631 9.53061 11.9976 11.5 11.9976 11.5C11.9976 11.5 14.3642 9.53061 15.0527 8.6868C15.7413 7.84299 15.6329 6.64262 14.7411 5.93667C13.8492 5.23072 12.6974 5.4328 11.9976 6.21194Z"
-                                    stroke="#00091A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                            <span class="text-main me-2 light-text">مجله</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 23C10.3 23 9 21.7 9 20V18.3C6.6 17.2 5 14.8 5 12C5 8.1 8.1 5 12 5C15.9 5 19 8.1 19 12C19 14.8 17.4 17.2 15 18.3V20C15 21.7 13.7 23 12 23ZM11 18.9V20C11 20.6 11.4 21 12 21C12.6 21 13 20.6 13 20V18.9C12.3 19 11.7 19 11 18.9ZM12 7C9.2 7 7 9.2 7 12C7 14.8 9.2 17 12 17C14.8 17 17 14.8 17 12C17 9.2 14.8 7 12 7ZM22 13H21C20.4 13 20 12.6 20 12C20 11.4 20.4 11 21 11H22C22.6 11 23 11.4 23 12C23 12.6 22.6 13 22 13ZM3 13H2C1.4 13 1 12.6 1 12C1 11.4 1.4 11 2 11H3C3.6 11 4 11.4 4 12C4 12.6 3.6 13 3 13ZM5.5 6.5C5.2 6.5 5 6.4 4.8 6.2L4.2 5.6C3.8 5.2 3.8 4.6 4.2 4.2C4.6 3.8 5.2 3.8 5.6 4.2L6.2 4.8C6.6 5.2 6.6 5.8 6.2 6.2C6 6.4 5.8 6.5 5.5 6.5ZM18.5 6.5C18.2 6.5 18 6.4 17.8 6.2C17.4 5.8 17.4 5.2 17.8 4.8L18.4 4.2C18.8 3.8 19.4 3.8 19.8 4.2C20.2 4.6 20.2 5.2 19.8 5.6L19.2 6.2C19 6.4 18.8 6.5 18.5 6.5ZM12 4C11.4 4 11 3.6 11 3V2C11 1.4 11.4 1 12 1C12.6 1 13 1.4 13 2V3C13 3.6 12.6 4 12 4Z" fill="black"/>
+                              </svg>
+                            <span class="text-main me-2 light-text">ایده‌ها</span>
                         </a>
                     </div>
                     <!-- mobile -->
                     <div class=" d-flex d-lg-none">
                         <a href="#" class="btn-md bg-primary text-white d-flex">
-                            <img src="./assets/image/svg/shap.svg" alt="shape-icon">
-                            <span class="text-Footnote me-1">مجله</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M10 17.6586V20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20V17.6586M12 2V3M3 12H2M5.5 5.5L4.8999 4.8999M18.5 5.5L19.1002 4.8999M22 12H21M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            <span class="text-Footnote me-1">ایده‌ها</span>
                         </a>
                         <div class="line mx-2"></div>
                         <button class="border-0 bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
@@ -542,7 +661,7 @@
                     </div>
                 </div>
                 <div class="offcanvas-body small d-lg-none">
-                    <div class="search-results d-none px-3 px-sm-4">
+                    <div class="search-results px-3 px-sm-4">
                         <!-- show this section in step1 ------------------------------>
                         <div class="step-1 d-block">
                             <div class="py-5">
@@ -731,58 +850,219 @@
                                     <i class="bi bi-chevron-left icon-size-4 me-1"></i>
                                 </a>
                             </div>
-                            <a href="#" class="">
-                                <div class=" item d-flex w-100 border border-1 rounded-5 mb-4">
-                                    <img src="./assets/image/result.png" alt="result" class="rounded-end-5 ">
-                                    <div class="p-3 bg-white w-100 rounded-start-5">
-                                        <div class="gray-6 text-tag my-sm-4 mb-2">
-                                            <i class="bi bi-calendar"></i>
-                                            <span class=" ms-1">31 مرداد 1402</span>
+                            <a href="#">
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <img src="./assets/image/result.png" alt="">
+                                        <div class="timer">
+                                            <span class="text-tag">01:59</span>
                                         </div>
-                                        <p class="text-small light-text">آموز ساخت کاردستی جغد با وسایل دور
-                                            ریختنی...
-                                        </p>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="title my-1 w-100">
+                                            <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0">بهنام جعفری</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="">
-                                <div class=" item d-flex w-100 border border-1 rounded-5 mb-4">
-                                    <img src="./assets/image/result.png" alt="result" class="rounded-end-5 ">
-                                    <div class="p-3 bg-white w-100 rounded-start-5">
-                                        <div class="gray-6 text-tag my-sm-4 mb-2">
-                                            <i class="bi bi-calendar"></i>
-                                            <span class=" ms-1">31 مرداد 1402</span>
+                            <a href="#">
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <img src="./assets/image/result.png" alt="">
+                                        <div class="timer">
+                                            <span class="text-tag">01:59</span>
                                         </div>
-                                        <p class="text-small light-text">آموز ساخت کاردستی جغد با وسایل دور
-                                            ریختنی...
-                                        </p>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="title my-1 w-100">
+                                            <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0">بهنام جعفری</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="">
-                                <div class=" item d-flex w-100 border border-1 rounded-5 mb-4">
-                                    <img src="./assets/image/result.png" alt="result" class="rounded-end-5 ">
-                                    <div class="p-3 bg-white w-100 rounded-start-5">
-                                        <div class="gray-6 text-tag my-sm-4 mb-2">
-                                            <i class="bi bi-calendar"></i>
-                                            <span class=" ms-1">31 مرداد 1402</span>
+                            <a href="#">
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <img src="./assets/image/result.png" alt="">
+                                        <div class="timer">
+                                            <span class="text-tag">01:59</span>
                                         </div>
-                                        <p class="text-small light-text">آموز ساخت کاردستی جغد با وسایل دور
-                                            ریختنی...
-                                        </p>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="title my-1 w-100">
+                                            <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0">بهنام جعفری</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <!-- ======================================================= -->
+                        <!-- ==============================s========================= -->
+                    </div>
+                </div>
+            </div>
+            <!-- modal login and register -->
+            <div class="modal fade " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content p-6">
+                        <div data-bs-dismiss="modal" aria-label="Close" class="courser-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M17 7L7 17M7 7L17 17" stroke="#253858" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="modal-body py-10 px-4">
+                            <!-- step 1  -->
+                            <div class="login-step-1  login-step  d-block">
+                                <p class="mb-0 text-sub-title-b">ورود یا ثبت نام</p>
+                                <p class="mb-6 text-small">برای ادامه شماره موبایل خود را وارد کنید</p>
+                                <form>
+                                    <div class="p-3 textfild">
+                                        <input type="text" placeholder="شماره همراه خود را بنویسید..."
+                                            class="text-small">
+                                    </div>
+                                    <!-- error message -->
+                                    <p class="mb-0 text-footnote text-error mx-2 my-1 text-danger d-none">شماره وارد شده صحیح نیست!</p>
+                                    <div class="d-flex align-items-center mb-2  mt-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <g clip-path="url(#clip0_2434_100552)">
+                                                <path
+                                                    d="M7.99998 10.6668V8.00016M7.99998 5.3335H8.00665M14.6666 8.00016C14.6666 11.6821 11.6819 14.6668 7.99998 14.6668C4.31808 14.6668 1.33331 11.6821 1.33331 8.00016C1.33331 4.31826 4.31808 1.3335 7.99998 1.3335C11.6819 1.3335 14.6666 4.31826 14.6666 8.00016Z"
+                                                    stroke="#7A869A" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2434_100552">
+                                                    <rect width="16" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="mb-0 me-1 text-caption">
+                                            ورود به شما به معنای موافقت با <a href="#" class="blue-6">شرایط استفاده از
+                                                خدمات کاغذرنگی</a> است.
+                                        </p>
 
+                                    </div>
+                                    <button class="py-2 px-4 w-100 rounded-5 active button">
+                                        <p class="mb-0 text-small"> ورود یا ثبت نام</p>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- step 2 -->
+                            <div class="login-step-2  login-step d-none ">
+                                <p class="mb-0 text-sub-title-b">کد تایید</p>
+                                <p class="mb-6 text-small">
+                                    کد تایید ارسال شده به شماره
+                                    <span>09106867426</span>
+                                    را وارد کنید
+                                </p>
+                                <form>
+                                    <div class="p-3  textfild">
+                                        <input type="text" class="text-small" placeholder="کدتایید را بنویسید">
+                                    </div>
+                                    <p class="mb-0 text-footnote text-error mx-2 my-1 text-danger ">     کد تایید وارد شده صحیح نیست!</p>
+                                    <div class="d-flex align-items-center mb-2 mt-4">
+
+                                        <p class="mb-0 me-1 text-caption d-none">
+                                            <span>01:59</span> تا دریافت مجدد کد
+                                        </p>
+                                        <!-- If  time is over -->
+                                        <p class="mb-0 me-1 text-caption d-flex align-items-center">
+                                            کدی دریافت نکردید؟
+                                            <a href="#" class="d-flex blue-6 text-small align-items-center me-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path
+                                                        d="M17.0443 10.7444C16.8128 12.9193 15.5805 14.9574 13.5413 16.1347C10.1534 18.0907 5.82132 16.9299 3.86531 13.542L3.65698 13.1812M2.95527 9.25602C3.18677 7.08111 4.4191 5.043 6.45825 3.8657C9.84616 1.90969 14.1783 3.07047 16.1343 6.45838L16.3426 6.81922M2.91113 15.0552L3.52118 12.7785L5.79788 13.3886M14.2022 6.61186L16.4789 7.2219L17.0889 4.94519"
+                                                        stroke="#1677FF" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>دریافت مجدد کد</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="mb-10">
+                                        <p class="mb-0 text-caption d-flex align-items-center">
+                                            شماره همراه اشتباه است؟
+                                            <a href="#" class="me-1 d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <g clip-path="url(#clip0_2456_50343)">
+                                                        <path
+                                                            d="M9.1665 3.3332H5.6665C4.26637 3.3332 3.56631 3.3332 3.03153 3.60568C2.56112 3.84536 2.17867 4.22782 1.93899 4.69822C1.6665 5.233 1.6665 5.93307 1.6665 7.3332V14.3332C1.6665 15.7333 1.6665 16.4334 1.93899 16.9682C2.17867 17.4386 2.56112 17.821 3.03153 18.0607C3.56631 18.3332 4.26637 18.3332 5.6665 18.3332H12.6665C14.0666 18.3332 14.7667 18.3332 15.3015 18.0607C15.7719 17.821 16.1543 17.4386 16.394 16.9682C16.6665 16.4334 16.6665 15.7333 16.6665 14.3332V10.8332M6.66648 13.3332H8.06193C8.46959 13.3332 8.67341 13.3332 8.86522 13.2871C9.03528 13.2463 9.19786 13.179 9.34698 13.0876C9.51517 12.9845 9.6593 12.8404 9.94755 12.5521L17.9165 4.5832C18.6069 3.89284 18.6069 2.77355 17.9165 2.0832C17.2261 1.39284 16.1069 1.39284 15.4165 2.0832L7.44753 10.0521C7.15928 10.3404 7.01515 10.4845 6.91208 10.6527C6.8207 10.8018 6.75336 10.9644 6.71253 11.1345C6.66648 11.3263 6.66648 11.5301 6.66648 11.9378V13.3332Z"
+                                                            stroke="#1677FF" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_2456_50343">
+                                                            <rect width="20" height="20" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <span class="text-small blue-6 me-1">ویرایش شماره همراه</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <button class="py-2 px-4 w-100 rounded-5 button active">
+                                        <p class="mb-0 text-small"> ورود به حساب کاربری</p>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- If the user is registering for the first time  -->
+                            <!-- step 3 -->
+                            <div class="login-step-3  login-step d-none">
+                                <p class="mb-0 text-sub-title-b"> تکمیل مشخصات</p>
+                                <p class="mb-6 text-small">مشخصات خود را جهت ثبت نام در سایت بنویسید</p>
+                                <form>
+                                    <label for="" class="text-main-b mb-2 me-2">نام و نام خانوادگی</label>
+                                    <div class="p-3  textfild">
+                                        <input type="text" placeholder="نام و نام خانوادگی" class="text-small">
+                                    </div>
+                                    <p class="mb-0 text-footnote text-error mx-2 my-1 text-danger ">     این فیلد نمی‌تواند خالی باشد !</p>
+                                    <label for="" class="text-main-b mb-2 mt-4 me-2">ایمیل</label>
+                                    <div class="p-3 mb-10 textfild">
+
+                                        <input type="text" placeholder="ایمیل خود را بنویسید" class="text-small">
+                                    </div>
+
+                                    <button class="py-2 px-4 w-100 rounded-5 active button">
+                                        <p class="mb-0 text-small"> تکمیل مشخصات </p>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <!-- search box -->
-             <section class="position-relative  w-100 h-100 px-3 px-sm-6" id="search-section">
+        <!-- search box -->
+         <section class="position-relative  w-100 h-100 px-3 px-sm-6" id="search-section">
                 <div class="position-absolute w-100 h-100 z-2 d-lg-block d-none" style="top: 0; right: 0;">
                     <img src="./assets/image/Pattern Single.png" alt="Pattern" class="w-100 h-100">
                 </div>
@@ -800,11 +1080,11 @@
                                 </svg>
                             </div>
                             <input class="border-0 w-100 text-main" type="text"
-                                placeholder="کاردستی مورد نظرتو پیدا کن!">
+                                placeholder="جستجو دسته‌بندی">
                         </div>
                     </div>
-            </section> 
-            <section class="mx-auto pt-8" style="max-width: 1920px;">
+        </section> 
+        <section class="mx-auto pt-8" style="max-width: 1920px;">
                 <div class="category-container">
                     <a href="#">
                         <div class="card m-2 ">
@@ -947,7 +1227,7 @@
                         </div>
                     </a>
                 </div>
-            </section>
+        </section>
         </main>
         <!-- footer -->
         <footer  style="margin-top: 200px;">

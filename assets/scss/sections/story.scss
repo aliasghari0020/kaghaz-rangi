@@ -85,7 +85,13 @@ $story-modal-hight: (
     }
 
     .story {
-      @include storyStyle(desktop)
+      @include storyStyle(desktop);
+      &.seen{
+        .story-image{
+          background: none;
+          border: 1px solid #c1c7d0;
+        }
+      }
     }
   }
 
@@ -121,10 +127,12 @@ $story-modal-hight: (
             }
           }
 
-          .close-btn-slide {
+          .btn-close-modal {
             position: absolute;
             top: 16px;
             right: 16px;
+            background: #fff;
+            border-radius: 50%;
           }
 
         }

@@ -29,7 +29,11 @@
         border-radius: 8px;
         border: 1px solid #EBF1F5;
         cursor: pointer;
-        
+        &.active{
+            background: #fff0f0;
+            color: #ee4562;
+            border: 1px solid #ee4562;
+        }
     }
     .tag-box{
         gap: 8px;

@@ -21,11 +21,13 @@
                         <img src="./assets/image/svg/logo.svg" alt="logo">
                     </div>
                     <!-- search box -->
-                    <div class="search px-6 py-3 d-lg-flex d-none me-6 position-relative">
-                        <div class="d-flex w-100">
+                    <div class="search px-6 py-3 d-lg-flex d-none me-6 position-relative" data-bs-toggle="collapse"
+                        href="#search-results-collapse" role="button" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <div class="d-flex w-100 container-search">
                             <div class="ms-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
+                                    id="icon-search" fill="none">
                                     <path
                                         d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z"
                                         stroke="#7A869A" stroke-width="2" stroke-linecap="round"
@@ -35,11 +37,12 @@
                             <input class="border-0 w-100 text-main" type="text"
                                 placeholder="کاردستی یا محصول مورد نظرتو پیدا کن!">
                         </div>
-                        <div class="search-results  bg-white border border-1 rounded-bottom-5 border-top-0 px-4 d-none">
+                        <div class="search-results  bg-white border border-1 rounded-bottom-5 border-top-0 px-4  collapse"
+                            id="search-results-collapse">
                             <!-- start search before result -->
-                            <div class="step-1 d-none">
+                            <div class="step-1 d-block ">
                                 <!-- label -->
-                                <div class="py-6  border-1 border-top ">
+                                <div class="py-6 ">
                                     <p class="text-small light-text ">بیشترین عبارات جستجو شده</p>
                                     <a href="#" class="tag-name bg-primary-5 text-footnote ">کاردستی بچگانه</a>
                                     <a href="#" class="tag-name bg-primary-5 text-footnote me-4">کاردستی بچگانه</a>
@@ -60,7 +63,7 @@
                                     <div class="horizontal-card mb-2">
                                         <div class="right-side">
                                             <a href="#"> <!--this product link-->
-                                                <img src="../assets/image/result.png" alt="">
+                                                <img src="./assets/image/result.png" alt="">
                                             </a>
                                         </div>
                                         <div class="left-side">
@@ -80,7 +83,9 @@
                                             </div>
                                             <div class="info d-flex">
                                                 <div>
-                                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
+                                                    <a href="#">
+                                                        <p class="mb-0">بهنام جعفری</p>
+                                                    </a><!-- author link-->
                                                 </div>
                                                 <div class="date">
                                                     <p class="mb-0">31 مرداد 1402</p>
@@ -91,7 +96,7 @@
                                     <div class="horizontal-card mb-2">
                                         <div class="right-side">
                                             <a href="#"> <!--this product link-->
-                                                <img src="../assets/image/product-1.png" alt="">
+                                                <img src="./assets/image/product-1.png" alt="">
                                                 <div class="label">
                                                     <div class="lable-price">
                                                         <p class="mb-0">500 هزار تومان</p>
@@ -114,18 +119,18 @@
                                                 </a>
                                             </div>
                                             <div class="info d-flex">
-                                                    <div>
-                                                        <a href="#"><!-- author link-->
-                                                            <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
-                                                        </a>
-                                                    </div>
+                                                <div>
+                                                    <a href="#"><!-- author link-->
+                                                        <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="horizontal-card mb-2">
                                         <div class="right-side">
                                             <a href="#"> <!--this product link-->
-                                                <img src="../assets/image/result.png" alt="">
+                                                <img src="./assets/image/result.png" alt="">
                                                 <div class="timer">
                                                     <span class="text-tag">01:59</span>
                                                 </div>
@@ -148,7 +153,9 @@
                                             </div>
                                             <div class="info d-flex">
                                                 <div>
-                                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
+                                                    <a href="#">
+                                                        <p class="mb-0">بهنام جعفری</p>
+                                                    </a><!-- author link-->
                                                 </div>
                                                 <div class="date">
                                                     <p class="mb-0">31 مرداد 1402</p>
@@ -188,7 +195,9 @@
                                             </div>
                                             <div class="info d-flex">
                                                 <div>
-                                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
+                                                    <a href="#">
+                                                        <p class="mb-0">بهنام جعفری</p>
+                                                    </a><!-- author link-->
                                                 </div>
                                                 <div class="date">
                                                     <p class="mb-0">31 مرداد 1402</p>
@@ -222,11 +231,11 @@
                                                 </a>
                                             </div>
                                             <div class="info d-flex">
-                                                    <div>
-                                                        <a href="#"><!-- author link-->
-                                                            <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
-                                                        </a>
-                                                    </div>
+                                                <div>
+                                                    <a href="#"><!-- author link-->
+                                                        <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -256,7 +265,9 @@
                                             </div>
                                             <div class="info d-flex">
                                                 <div>
-                                                    <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
+                                                    <a href="#">
+                                                        <p class="mb-0">بهنام جعفری</p>
+                                                    </a><!-- author link-->
                                                 </div>
                                                 <div class="date">
                                                     <p class="mb-0">31 مرداد 1402</p>
@@ -267,8 +278,8 @@
                                 </div>
                             </div>
                             <!-- Successful search and search result -->
-                            <div class="d-block">
-                                <div class="py-6  border-1 border-top ">
+                            <div class="step-2 d-none">
+                                <div class="py-6 ">
                                     <div class="d-flex justify-content-between mb-2">
                                         <p class="text-small light-text mb-0"> نتایج جستجو</p>
                                         <a href="#" class="text-caption d-flex align-items-start light-text ">
@@ -281,7 +292,7 @@
                                 <div class="horizontal-card mb-2">
                                     <div class="right-side">
                                         <a href="#"> <!--this product link-->
-                                            <img src="../assets/image/result.png" alt="">
+                                            <img src="./assets/image/result.png" alt="">
                                         </a>
                                     </div>
                                     <div class="left-side">
@@ -301,7 +312,9 @@
                                         </div>
                                         <div class="info d-flex">
                                             <div>
-                                                <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
+                                                <a href="#">
+                                                    <p class="mb-0">بهنام جعفری</p>
+                                                </a><!-- author link-->
                                             </div>
                                             <div class="date">
                                                 <p class="mb-0">31 مرداد 1402</p>
@@ -312,7 +325,7 @@
                                 <div class="horizontal-card mb-2">
                                     <div class="right-side">
                                         <a href="#"> <!--this product link-->
-                                            <img src="../assets/image/product-1.png" alt="">
+                                            <img src="./assets/image/product-1.png" alt="">
                                             <div class="label">
                                                 <div class="lable-price">
                                                     <p class="mb-0">500 هزار تومان</p>
@@ -335,18 +348,18 @@
                                             </a>
                                         </div>
                                         <div class="info d-flex">
-                                                <div>
-                                                    <a href="#"><!-- author link-->
-                                                        <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
-                                                    </a>
-                                                </div>
+                                            <div>
+                                                <a href="#"><!-- author link-->
+                                                    <p class="mb-0"> کشف شده توسط بهنام جعفری</p>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="horizontal-card mb-2">
                                     <div class="right-side">
                                         <a href="#"> <!--this product link-->
-                                            <img src="../assets/image/result.png" alt="">
+                                            <img src="./assets/image/result.png" alt="">
                                             <div class="timer">
                                                 <span class="text-tag">01:59</span>
                                             </div>
@@ -369,7 +382,9 @@
                                         </div>
                                         <div class="info d-flex">
                                             <div>
-                                                <a href="#"><p class="mb-0">بهنام جعفری</p></a><!-- author link-->
+                                                <a href="#">
+                                                    <p class="mb-0">بهنام جعفری</p>
+                                                </a><!-- author link-->
                                             </div>
                                             <div class="date">
                                                 <p class="mb-0">31 مرداد 1402</p>
@@ -381,7 +396,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- left side mobile -->
                 <div class="let-side">
                     <!-- desktop -->
                     <div class="d-none d-lg-flex desktop">
@@ -647,7 +661,7 @@
                     </div>
                 </div>
                 <div class="offcanvas-body small d-lg-none">
-                    <div class="search-results d-none px-3 px-sm-4">
+                    <div class="search-results px-3 px-sm-4">
                         <!-- show this section in step1 ------------------------------>
                         <div class="step-1 d-block">
                             <div class="py-5">
@@ -836,51 +850,212 @@
                                     <i class="bi bi-chevron-left icon-size-4 me-1"></i>
                                 </a>
                             </div>
-                            <a href="#" class="">
-                                <div class=" item d-flex w-100 border border-1 rounded-5 mb-4">
-                                    <img src="./assets/image/result.png" alt="result" class="rounded-end-5 ">
-                                    <div class="p-3 bg-white w-100 rounded-start-5">
-                                        <div class="gray-6 text-tag my-sm-4 mb-2">
-                                            <i class="bi bi-calendar"></i>
-                                            <span class=" ms-1">31 مرداد 1402</span>
+                            <a href="#">
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <img src="./assets/image/result.png" alt="">
+                                        <div class="timer">
+                                            <span class="text-tag">01:59</span>
                                         </div>
-                                        <p class="text-small light-text">آموز ساخت کاردستی جغد با وسایل دور
-                                            ریختنی...
-                                        </p>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="title my-1 w-100">
+                                            <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0">بهنام جعفری</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="">
-                                <div class=" item d-flex w-100 border border-1 rounded-5 mb-4">
-                                    <img src="./assets/image/result.png" alt="result" class="rounded-end-5 ">
-                                    <div class="p-3 bg-white w-100 rounded-start-5">
-                                        <div class="gray-6 text-tag my-sm-4 mb-2">
-                                            <i class="bi bi-calendar"></i>
-                                            <span class=" ms-1">31 مرداد 1402</span>
+                            <a href="#">
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <img src="./assets/image/result.png" alt="">
+                                        <div class="timer">
+                                            <span class="text-tag">01:59</span>
                                         </div>
-                                        <p class="text-small light-text">آموز ساخت کاردستی جغد با وسایل دور
-                                            ریختنی...
-                                        </p>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="title my-1 w-100">
+                                            <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0">بهنام جعفری</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="">
-                                <div class=" item d-flex w-100 border border-1 rounded-5 mb-4">
-                                    <img src="./assets/image/result.png" alt="result" class="rounded-end-5 ">
-                                    <div class="p-3 bg-white w-100 rounded-start-5">
-                                        <div class="gray-6 text-tag my-sm-4 mb-2">
-                                            <i class="bi bi-calendar"></i>
-                                            <span class=" ms-1">31 مرداد 1402</span>
+                            <a href="#">
+                                <div class="horizontal-card mb-2">
+                                    <div class="right-side">
+                                        <img src="./assets/image/result.png" alt="">
+                                        <div class="timer">
+                                            <span class="text-tag">01:59</span>
                                         </div>
-                                        <p class="text-small light-text">آموز ساخت کاردستی جغد با وسایل دور
-                                            ریختنی...
-                                        </p>
+                                    </div>
+                                    <div class="left-side">
+                                        <div class="title my-1 w-100">
+                                            <p class="mb-0">آموز ساخت کاردستی جغد با وسایل دور ریختنی...</p>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div>
+                                                <p class="mb-0">بهنام جعفری</p>
+                                            </div>
+                                            <div class="date">
+                                                <p class="mb-0">31 مرداد 1402</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <!-- ======================================================= -->
+                        <!-- ==============================s========================= -->
+                    </div>
+                </div>
+            </div>
+            <!-- modal login and register -->
+            <div class="modal fade " id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content p-6">
+                        <div data-bs-dismiss="modal" aria-label="Close" class="courser-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M17 7L7 17M7 7L17 17" stroke="#253858" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="modal-body py-10 px-4">
+                            <!-- step 1  -->
+                            <div class="login-step-1  login-step  d-block">
+                                <p class="mb-0 text-sub-title-b">ورود یا ثبت نام</p>
+                                <p class="mb-6 text-small">برای ادامه شماره موبایل خود را وارد کنید</p>
+                                <form>
+                                    <div class="p-3 textfild">
+                                        <input type="text" placeholder="شماره همراه خود را بنویسید..."
+                                            class="text-small">
+                                    </div>
+                                    <!-- error message -->
+                                    <p class="mb-0 text-footnote text-error mx-2 my-1 text-danger d-none">شماره وارد شده صحیح نیست!</p>
+                                    <div class="d-flex align-items-center mb-2  mt-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <g clip-path="url(#clip0_2434_100552)">
+                                                <path
+                                                    d="M7.99998 10.6668V8.00016M7.99998 5.3335H8.00665M14.6666 8.00016C14.6666 11.6821 11.6819 14.6668 7.99998 14.6668C4.31808 14.6668 1.33331 11.6821 1.33331 8.00016C1.33331 4.31826 4.31808 1.3335 7.99998 1.3335C11.6819 1.3335 14.6666 4.31826 14.6666 8.00016Z"
+                                                    stroke="#7A869A" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2434_100552">
+                                                    <rect width="16" height="16" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="mb-0 me-1 text-caption">
+                                            ورود به شما به معنای موافقت با <a href="#" class="blue-6">شرایط استفاده از
+                                                خدمات کاغذرنگی</a> است.
+                                        </p>
 
+                                    </div>
+                                    <button class="py-2 px-4 w-100 rounded-5 active button">
+                                        <p class="mb-0 text-small"> ورود یا ثبت نام</p>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- step 2 -->
+                            <div class="login-step-2  login-step d-none ">
+                                <p class="mb-0 text-sub-title-b">کد تایید</p>
+                                <p class="mb-6 text-small">
+                                    کد تایید ارسال شده به شماره
+                                    <span>09106867426</span>
+                                    را وارد کنید
+                                </p>
+                                <form>
+                                    <div class="p-3  textfild">
+                                        <input type="text" class="text-small" placeholder="کدتایید را بنویسید">
+                                    </div>
+                                    <p class="mb-0 text-footnote text-error mx-2 my-1 text-danger ">     کد تایید وارد شده صحیح نیست!</p>
+                                    <div class="d-flex align-items-center mb-2 mt-4">
+
+                                        <p class="mb-0 me-1 text-caption d-none">
+                                            <span>01:59</span> تا دریافت مجدد کد
+                                        </p>
+                                        <!-- If  time is over -->
+                                        <p class="mb-0 me-1 text-caption d-flex align-items-center">
+                                            کدی دریافت نکردید؟
+                                            <a href="#" class="d-flex blue-6 text-small align-items-center me-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path
+                                                        d="M17.0443 10.7444C16.8128 12.9193 15.5805 14.9574 13.5413 16.1347C10.1534 18.0907 5.82132 16.9299 3.86531 13.542L3.65698 13.1812M2.95527 9.25602C3.18677 7.08111 4.4191 5.043 6.45825 3.8657C9.84616 1.90969 14.1783 3.07047 16.1343 6.45838L16.3426 6.81922M2.91113 15.0552L3.52118 12.7785L5.79788 13.3886M14.2022 6.61186L16.4789 7.2219L17.0889 4.94519"
+                                                        stroke="#1677FF" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span>دریافت مجدد کد</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="mb-10">
+                                        <p class="mb-0 text-caption d-flex align-items-center">
+                                            شماره همراه اشتباه است؟
+                                            <a href="#" class="me-1 d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <g clip-path="url(#clip0_2456_50343)">
+                                                        <path
+                                                            d="M9.1665 3.3332H5.6665C4.26637 3.3332 3.56631 3.3332 3.03153 3.60568C2.56112 3.84536 2.17867 4.22782 1.93899 4.69822C1.6665 5.233 1.6665 5.93307 1.6665 7.3332V14.3332C1.6665 15.7333 1.6665 16.4334 1.93899 16.9682C2.17867 17.4386 2.56112 17.821 3.03153 18.0607C3.56631 18.3332 4.26637 18.3332 5.6665 18.3332H12.6665C14.0666 18.3332 14.7667 18.3332 15.3015 18.0607C15.7719 17.821 16.1543 17.4386 16.394 16.9682C16.6665 16.4334 16.6665 15.7333 16.6665 14.3332V10.8332M6.66648 13.3332H8.06193C8.46959 13.3332 8.67341 13.3332 8.86522 13.2871C9.03528 13.2463 9.19786 13.179 9.34698 13.0876C9.51517 12.9845 9.6593 12.8404 9.94755 12.5521L17.9165 4.5832C18.6069 3.89284 18.6069 2.77355 17.9165 2.0832C17.2261 1.39284 16.1069 1.39284 15.4165 2.0832L7.44753 10.0521C7.15928 10.3404 7.01515 10.4845 6.91208 10.6527C6.8207 10.8018 6.75336 10.9644 6.71253 11.1345C6.66648 11.3263 6.66648 11.5301 6.66648 11.9378V13.3332Z"
+                                                            stroke="#1677FF" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_2456_50343">
+                                                            <rect width="20" height="20" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <span class="text-small blue-6 me-1">ویرایش شماره همراه</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <button class="py-2 px-4 w-100 rounded-5 button active">
+                                        <p class="mb-0 text-small"> ورود به حساب کاربری</p>
+                                    </button>
+                                </form>
+                            </div>
+                            <!-- If the user is registering for the first time  -->
+                            <!-- step 3 -->
+                            <div class="login-step-3  login-step d-none">
+                                <p class="mb-0 text-sub-title-b"> تکمیل مشخصات</p>
+                                <p class="mb-6 text-small">مشخصات خود را جهت ثبت نام در سایت بنویسید</p>
+                                <form>
+                                    <label for="" class="text-main-b mb-2 me-2">نام و نام خانوادگی</label>
+                                    <div class="p-3  textfild">
+                                        <input type="text" placeholder="نام و نام خانوادگی" class="text-small">
+                                    </div>
+                                    <p class="mb-0 text-footnote text-error mx-2 my-1 text-danger ">     این فیلد نمی‌تواند خالی باشد !</p>
+                                    <label for="" class="text-main-b mb-2 mt-4 me-2">ایمیل</label>
+                                    <div class="p-3 mb-10 textfild">
+
+                                        <input type="text" placeholder="ایمیل خود را بنویسید" class="text-small">
+                                    </div>
+
+                                    <button class="py-2 px-4 w-100 rounded-5 active button">
+                                        <p class="mb-0 text-small"> تکمیل مشخصات </p>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1047,7 +1222,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal ">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
                                                 </div>
 
@@ -1064,7 +1239,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal ">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
 
                                                 </div>
@@ -1081,7 +1256,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal ">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
 
                                                 </div>
@@ -1098,7 +1273,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal ">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
 
                                                 </div>
@@ -1115,7 +1290,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal ">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
 
                                                 </div>
@@ -1132,7 +1307,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal ">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
 
                                                 </div>
@@ -1149,7 +1324,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
 
                                                 </div>
@@ -1166,7 +1341,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal ">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
                                                 </div>
                                             </div>
@@ -1182,7 +1357,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- btn close modale -->
-                                                <div class="btn-close-modal pe-1">
+                                                <div class="btn-close-modal ">
                                                     <img src="./assets/image/svg/close-story.svg" alt="close">
                                                 </div>
                                             </div>
@@ -1623,7 +1798,7 @@
                 </div>
             </section>
             <!-- product-card -->
-            <section class="card-box d-block px-xxl-8 px-sm-6 px-3 py-xl-8 py-6 ">
+            <section class="card-box d-block px-xxl-8 px-sm-6 px-3 pb-xl-8 pb-6  ">
                 <div class="d-flex w-100 justify-content-between align-items-center mb-4">
                     <p class="mb-0 me-2 text-title">محصولات رنگی ویژه</p>
                     <div class="d-sm-flex d-none">
@@ -1952,7 +2127,7 @@
                 </div>
             </section>
             <!-- discover-card -->
-            <section class="mx-auto pt-8" style="max-width: 1920px;">
+            <section class="mx-auto " style="max-width: 1920px;">
                 <div class="px-3 px-sm-4 px-md-5 px-lg-6 px-xl-7 me-3">
                     <p class="text-title">جدیدترین محصولات رنگی</p>
                 </div>
@@ -2332,7 +2507,7 @@
                 </div>
             </section>
             <!-- btn Sticky -->
-            <div class="mb-20 btn-sticky d-lg-none ">
+            <div class="mb-20 btn-sticky d-lg-none me-6 " style="position: sticky; bottom: 24px; z-index: 99;">
                 <a href="#" >
                    <button class="btn-md ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

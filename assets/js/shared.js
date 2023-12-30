@@ -33,34 +33,52 @@ function fixedHeader() {
 
 
 fixedHeader();
-
-
-function toggleSearchElements(length, index, searchElements) {
-
-    if (length > 0) {
-        toggleClass(searchElements.searches, "replace", 'bg-gray-1', 'bg-white');
-        toggleClass(searchElements.boxes[index], "replace", 'bg-gray-1', 'bg-white');
-        toggleClass(searchElements.results[index], "replace", 'd-none', 'd-block');
-        toggleClass(searchElements.deleteValue, "replace", 'd-none', 'd-block');
-    } else {
-        toggleClass(searchElements.searches, "replace", 'bg-white', 'bg-gray-1');
-        toggleClass(searchElements.boxes[index], "replace", 'bg-white', 'bg-gray-1');
-        toggleClass(searchElements.results[index], "replace", "d-block", "d-none");
-        toggleClass(searchElements.deleteValue, "replace", 'd-none', 'd-block');
-
-    }
-}
-
-
 let searchElements = {
     boxes: document.querySelectorAll('header input'),
     forms: document.querySelectorAll('.form-search'),
     searches: document.querySelector('.search'),
     results: document.querySelectorAll('.search-results'),
-    deleteValue: document.querySelector('.delete-value')
+    deleteValue: document.querySelector('.delete-value'),
+    step1:document.querySelectorAll('.step-1'),
+    step2:document.querySelectorAll('.step-2'),
 };
 
+function toggleSearchElements(length, index, searchElements) {
+    if (length > 0) {
+        toggleClass(searchElements.step1[index], "replace", 'd-block', 'd-none');
+        toggleClass(searchElements.step2[index], "replace", 'd-none', 'd-block');
+        toggleClass(searchElements.deleteValue, "replace", 'd-none', 'd-block');
+    } else {
+        toggleClass(searchElements.step1[index], "replace", 'd-none', 'd-block');
+        toggleClass(searchElements.step2[index], "replace", 'd-block', 'd-none');
+        toggleClass(searchElements.deleteValue, "replace", 'd-block', 'd-none');
+    }
+}
+
+function searchActions (){
+    const container = document.querySelector('.search');
+    document.addEventListener('click', (e) => {
+      
+        if (!container.contains(e.target)) {
+            const collapse = document.querySelector('.search-results');
+            new bootstrap.Collapse(collapse, { toggle: false }).hide();
+        }else{
+             const collapse = document.querySelector('.search-results');
+            new bootstrap.Collapse(collapse, { toggle: true }).show();
+        }
+
+        if(container.classList.contains('collapsed')){
+            toggleClass(container, 'remove', 'action');
+           
+        }else{
+            toggleClass(container, 'add', 'action');
+           
+        }
+    });
+
+
 searchElements.boxes.forEach((searchBox, index) => {
+
     searchBox.addEventListener('input', (event) => {
         let inputValue = event.target.value;
         let length = inputValue.length;
@@ -70,11 +88,52 @@ searchElements.boxes.forEach((searchBox, index) => {
             length = 0;
             toggleSearchElements(0, index, searchElements);
         });
-
     });
-
-
 });
+    
+    
+
+    
+}
+
+
+searchActions()
+
+
+
+
+
+
+
+// searchElements.boxes.forEach((searchBox, index) => {
+
+//     searchBox.addEventListener('input', (event) => {
+//         // let inputValue = event.target.value;
+//         // let length = inputValue.length;
+//         // toggleSearchElements(length, index, searchElements);
+//         searchElements.deleteValue.addEventListener('click', () => {
+//             searchBox.value = "";
+//             // length = 0;
+//             // toggleSearchElements(0, index, searchElements);
+//         });
+//     });
+
+//     searchBox.addEventListener('click', () => {
+//        let length = 1;
+//         toggleSearchElements(length, index, searchElements);
+//     });
+
+//     searchBox.addEventListener('blur', ()=> {
+//         let length = 0;
+//         toggleSearchElements(length, index, searchElements);
+//       });
+//       searchElements.searches.addEventListener('mousedown', function(event) {
+//         event.preventDefault();
+//       }, false);
+
+// });
+
+
 
 
 searchElements.forms.forEach((form) => {

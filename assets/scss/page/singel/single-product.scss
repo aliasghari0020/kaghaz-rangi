@@ -69,7 +69,9 @@
                 }
 
             }
-
+            .modal-title{
+                border-bottom: 1px solid var(--Neutral-Light-N30, #EBECF0);
+            }
             .label-iamge {
                 max-width: 100%;
                 flex-grow: 2;

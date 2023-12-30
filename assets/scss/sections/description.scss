@@ -1,0 +1,78 @@
+@use"../components/typography" as *;
+
+.description{
+
+    .title-description{
+        div{
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px dashed #EBECF0;
+            flex: 1;
+        }
+    }
+    a{
+        color: #1677ff;
+    }
+    h2{
+        @include text-body-style(subTitle,bold ); // bold text subTitle
+        font-weight: 950; // text ExtraBlack 
+        color: rgba(0, 9, 26, 1);
+    }
+    h3{
+        @include text-body-style(body,bold ); // bold text body
+        color: rgba(0, 9, 26, 1);
+    }
+    h4{
+        @include text-body-style(small,bold ); // bold text body
+        color: rgba(0, 9, 26, 1);
+    }
+
+
+
+    .text{
+        @include text-body-style(small,normal ); // normal text body
+    }
+    .content{
+        height: 56px;
+        overflow: hidden;
+        .text{
+            color: rgba(37, 56, 88, 1);
+        }
+        &.show{
+            height: auto;
+        }
+    }
+}
+
+  @media screen and (min-width: 1080px) {
+    .description{
+
+        h2{
+            @include text-body-style(title,normal );
+            font-weight: 950; // text ExtraBlack 
+
+        }
+        h3{
+            @include text-body-style(subTitle,bold ); // bold text subTitle
+         
+        }
+        h4{
+            @include text-body-style(body,bold ); // bold text body
+
+        }
+        .text{
+            @include text-body-style(body,normal ); // normal text body
+      
+        }
+        .content{
+            height: 64px;
+            overflow: hidden;
+ 
+            &.show{
+                height: auto;
+            }
+        }
+    }
+  }
+
+

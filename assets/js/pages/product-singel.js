@@ -1,9 +1,12 @@
 document.querySelector('#text').addEventListener('click',()=>{
     document.querySelector("#text-2 p").classList.toggle('active');
     if(document.querySelector("#text-2 p").classList.contains('active')){
-        document.querySelector('#text svg').setAttribute( 'style','transform:rotate(180deg)')
+        document.querySelector('#text svg').setAttribute( 'style','transform:rotate(180deg)');
+        document.querySelector("#text  p").innerHTML="بستن توضیحات";
+
     }else{
-        document.querySelector('#text svg').setAttribute( 'style','transform:rotate(0deg)')
+        document.querySelector('#text svg').setAttribute( 'style','transform:rotate(0deg)');
+        document.querySelector("#text  p").innerHTML=" نمایش توضیحات";
 
     }
 })
@@ -23,7 +26,7 @@ document.querySelectorAll('.action-btns-container').forEach((e)=>{
 var swiper, swiper2;
 
 function createSwipers() {
-    // اگر سویپرها قبلا ایجاد شده‌اند، آن‌ها را نابود کنید
+
     if (swiper) swiper.destroy();
     if (swiper2) swiper2.destroy();
 

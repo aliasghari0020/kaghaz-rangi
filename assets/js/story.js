@@ -10,7 +10,9 @@ storys.forEach((story, index) => {
     story.setAttribute('onclick', `swiper1.slideTo(${index})`);
     story.addEventListener('click', (e) => {
         openCloseModal('show');
-
+     if(!story.classList.contains('seen')){
+        story.classList.add("seen")
+     }
     })
 })
 // Close the modal when a close button element is clicked
@@ -53,7 +55,15 @@ const swiper1 = new Swiper('#full-story-slider', {
         disableOnInteraction: false,
     },
     on: {
+        init: function () {
+            // آرایه برای نگهداری وضعیت اسلایدها
+            this.seenSlides = [];
+        },
         slideChange: function () {
+            var currentSlideElement = this.slides[this.activeIndex];
+            if (currentSlideElement) {
+              storys[this.activeIndex].classList.add("seen")
+            }
             if (this.activeIndex === 8) {
                 intervalId = setInterval(() => {
                     timerClose()
