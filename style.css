@@ -18491,6 +18491,9 @@ footer .bot p {
   border-bottom: 1px solid var(--Neutral-Light-N50, #C1C7D0);
 }
 
+.single a {
+  color: #1677ff;
+}
 .single .title h1 {
   font-size: 25.36px;
   line-height: 40px;
@@ -18653,6 +18656,10 @@ footer .bot p {
   width: 12px;
   height: 12px;
 }
+.single .image img {
+  width: 100%;
+  border-radius: 10px;
+}
 .single .content {
   max-width: 900px;
   margin: auto;
@@ -18783,6 +18790,34 @@ footer .bot p {
 .single .content .faq .accordion-item {
   border-bottom: none;
   border: 1px dashed #EBF1F5;
+}
+.single .offer-buy .card-offer-buy {
+  border-radius: 10px;
+  border: 1px solid var(--Neutral-Light-N30, #EBECF0);
+  min-width: 295px;
+  height: 74px;
+  padding: 1px;
+}
+.single .offer-buy .card-offer-buy img {
+  aspect-ratio: 16/9;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+.single .offer-buy .card-offer-buy .name {
+  color: var(--Neutral-Dark-Black, #00091A);
+}
+.single .offer-buy .card-offer-buy .pice {
+  color: #6B778C;
+}
+.single .offer-buy .card-offer-buy .btn-offer-buy {
+  width: 46px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EE4562;
+  color: #fff;
+  border-radius: 4px;
 }
 
 @media screen and (min-width: 480px) {

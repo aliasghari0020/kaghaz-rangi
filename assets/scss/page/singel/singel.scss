@@ -6,6 +6,10 @@
 
 
 .single {
+    a {
+        color: #1677ff;
+    }
+
     .title {
         h1 {
             @include heading-style(h5)
@@ -29,6 +33,7 @@
             @include text-body-style(body, bold); // bold text body
         }
     }
+
     .paragraph {
         @include paragraph(tablet)
     }
@@ -67,6 +72,7 @@
 
         }
     }
+
     .source-link {
         border-radius: 4px;
         border: 1px dashed #D0D6D9;
@@ -76,6 +82,7 @@
             color: var(--Neutral-Dark-Black, #00091A);
         }
     }
+
     .comment-box {
         @include comeentBox(mobile);
 
@@ -103,6 +110,13 @@
                     height: 12px;
                 }
             }
+        }
+    }
+
+    .image {
+        img {
+            width: 100%;
+            border-radius: 10px;
         }
     }
 
@@ -152,7 +166,7 @@
             }
         }
 
-      
+
 
         .slider-box {
             border: 1px solid var(--Neutral-Light-N30, #EBECF0);
@@ -210,6 +224,43 @@
 
 
     }
+
+    .offer-buy {
+        .card-offer-buy {
+            border-radius: 10px;
+            border: 1px solid var(--Neutral-Light-N30, #EBECF0);
+            min-width: 295px;
+            height: 74px;
+            padding: 1px;
+
+            img {
+                aspect-ratio: 16/9;
+                height: 100%;
+                border-radius: 0 10px 10px 0;
+
+            }
+
+            .name {
+                color: var(--Neutral-Dark-Black, #00091A);
+            }
+
+            .pice {
+                color: #6B778C;
+            }
+
+            .btn-offer-buy {
+                width: 46px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #EE4562;
+                color: #fff;
+                border-radius: 4px;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width:480px) {
@@ -250,6 +301,7 @@
 
             }
         }
+
         .comment-box {
             @include comeentBox(tablet);
 
@@ -266,6 +318,7 @@
 
             }
         }
+
         .content {
             .gallery {
                 .modal-dialog {
@@ -309,9 +362,11 @@
                 font-weight: 950; // text ExtraBlack 
             }
         }
+
         .paragraph {
             @include paragraph(desktop)
         }
+
         .info-title {
             .author-single {
                 p {
@@ -332,6 +387,7 @@
                 }
             }
         }
+
         .comment-box {
             @include comeentBox(desktop);
 
@@ -355,6 +411,7 @@
                 }
             }
         }
+
         .content {
             .gallery {
                 .modal-dialog {
