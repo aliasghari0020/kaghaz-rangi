@@ -1,58 +1,193 @@
+@use "../components/typography" as *;
 
+$sizeLogoFooterWidht: (
+    desktop:111px,
+    tablet:88px,
+    mobile:177px,
+);
+$sizeLogoFooterheight: (
+    desktop:40px,
+    tablet:32px,
+    mobile:64px,
+);
 
-
-
-.btn-sticky{
-    position: sticky;
-    bottom: 92px;
-    margin-right: 24px;
-    z-index: 99;
-    display: flex;
+@mixin footerLogoSize($size) {
+    max-width: map-get($sizeLogoFooterWidht, $size);
+    height: map-get($sizeLogoFooterheight, $size);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.container__footer{
-    width: 100%;
-    max-width: 1320px;
-    margin: auto;
-    li{
-        list-style-type: none;
+footer {
+    border-top: 1px solid var(--Neutral-Light-N30, #EBECF0);
+    background: #FFF;
+    .accordion-button::after{
+        margin-left: 0 !important;
     }
-}
-.container__footer-mobile{
-    li{
-        list-style-type: none;
+    .footer-container {
+        max-width: 1320px;
+        margin: 0 auto;
+        .logo {
+            @include footerLogoSize(mobile);
+            img{
+                width: 100%;
+            }
+        }
+        li {
+            margin-bottom:8px ;
+            a {
+                color: var(--Neutral-Dark-N700, #253858);
+                @include text-body-style(small, normal); // bold text small
+            }
+        }
+
+        p {
+            color: var(--Neutral-Dark-Black, #00091A);
+            @include text-body-style(small, bold); // bold text small
+        }
+
+        .icon-box {
+            gap: 8px;
+            div{
+                padding: 6px;
+                border-radius: 50%;
+                background: var(--Neutral-Light-N10, #FAFBFC);
+            }
+        }
     }
-}
-.accordion-button::after{
-    margin: 0 !important;
-    color: #8C8C8C !important;
-}
+
+    .bot {
 
 
-@media screen and (max-width: 1024px){
-    .social-networks{
-        background-color: #FFFAF0;
-        padding: 16px;
-        p{
-            margin-left: 24px;
-            margin-bottom: 0 !important;
+        background: var(--Neutral-Light-N10, #FAFBFC);
+
+        p {
+            color: var(--Neutral-Dark-N700, #253858);
+            @include text-body-style(footnote,normal ); // normal text footnote
+            text-align: center;
         }
     }
 }
-@media screen and (max-width: 480px){
-    .container__footer{
-        display: none;
+
+@media screen and (min-width: 480px) {
+
+    footer {
+
+        .footer-container {
+            .logo {
+                @include footerLogoSize(tablet);
+            }
+
+            .link-group{
+                gap: 32px;
+            }
+            .menu-links {
+                a {
+
+                    @include text-body-style(body, normal); // normal text body
+                }
+            }
+
+            p {
+
+                @include text-body-style(small, bold); // normal text body
+
+            }
+
+            .icon-box {
+                gap: 8px;
+            }
+        }
+
+        .bot {
+            background: var(--Neutral-Light-N10, #FAFBFC);
+
+            p {
+                @include text-body-style(caption, normal); // normal text caption
+            }
+        }
+    }
+
+
+
+}
+@media screen and (min-width: 1024px) {
+    footer {
+
+        .footer-container {
+            .logo {
+                @include footerLogoSize(desktop);
+            }
+            .link-group{
+                gap: 56px;
+            }
+            .menu-links {
+                gap: 32px;
+
+                a {
+
+                    @include text-body-style(subTitle, normal); // bold text subTitle
+                }
+            }
+
+            p {
+
+                @include text-body-style(body, bold); // bold text subTitle
+
+            }
+
+            .icon-box {
+                gap: 8px;
+            }
+        }
+
+        .bot {
+            p {
+                @include text-body-style(caption, normal); // normal text caption
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+    footer {
+
+        .footer-container {
+            .logo {
+                @include footerLogoSize(desktop);
+            }
+
+            .link-group{
+                gap: 56px;
+            }
+
+            p {
+                @include text-body-style(body, bold); // bold text subTitle
+
+            }
+
+            .icon-box {
+                gap: 8px;
+            }
+        }
+
+        .bot {
+            p {
+                @include text-body-style(caption, normal); // normal text caption
+            }
+        }
     }
 }

@@ -103,6 +103,11 @@
 
                 color: var(--neutral-light-n-50, #C1C7D0);
             }
+
+            &:focus{
+                background: #fff;
+                border: 1px solid  #EE4562;
+            }
         }
 
         label {

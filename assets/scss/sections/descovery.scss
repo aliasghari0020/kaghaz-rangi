@@ -37,9 +37,9 @@ $card-min-width: (
 
 $card-height:(
   sm:331,
-  md:369,
-  lg:427,
-  xl:492,
+  md:351,
+  lg:371,
+  xl:391,
 );
 
 
@@ -58,8 +58,6 @@ $card-height:(
  
  
 }
-
-
 @mixin categoryContainer($size , $row){
   width: 100%;
   display: grid;

@@ -10,7 +10,9 @@ storys.forEach((story, index) => {
     story.setAttribute('onclick', `swiper1.slideTo(${index})`);
     story.addEventListener('click', (e) => {
         openCloseModal('show');
-
+     if(!story.classList.contains('seen')){
+        story.classList.add("seen")
+     }
     })
 })
 // Close the modal when a close button element is clicked
@@ -23,7 +25,6 @@ closeBtn.forEach((btn) => {
 // Open or close the modal
 const openCloseModal = (type) => {
     const modal = document.getElementById('modal-story');
-    console.log('openCloseModal called with type:', type); 
    
     if (!bsModal) {
         bsModal = new bootstrap.Modal(modal, {});
@@ -54,7 +55,15 @@ const swiper1 = new Swiper('#full-story-slider', {
         disableOnInteraction: false,
     },
     on: {
+        init: function () {
+            // آرایه برای نگهداری وضعیت اسلایدها
+            this.seenSlides = [];
+        },
         slideChange: function () {
+            var currentSlideElement = this.slides[this.activeIndex];
+            if (currentSlideElement) {
+              storys[this.activeIndex].classList.add("seen")
+            }
             if (this.activeIndex === 8) {
                 intervalId = setInterval(() => {
                     timerClose()
@@ -65,7 +74,6 @@ const swiper1 = new Swiper('#full-story-slider', {
             if (isAutoplaying) {
                 const timeLine = document.querySelectorAll('.time-line div');
                 width = Math.floor((1 - progress) * 100);
-                console.log(Math.floor((1 - progress)*100))
                 timeLine.forEach((line) => {
                     line.setAttribute('style', `width: ${width}%`);
                 })

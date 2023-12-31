@@ -4,6 +4,8 @@
 
 @use "../components/theme-colors";
 
+@use "../components/modal";
+
 @use "../components/typography.scss";
 
 @use "../sections/header/header.scss";
@@ -18,7 +20,7 @@
 
 @use"../components/card.scss";
 
-
+@use"../sections/login.scss";
 
 @use "../sections/card-box-special.scss";
 
@@ -27,15 +29,18 @@
 @use "../sections/footer.scss";
 
 @use "../components/lable";
-
+@use "../components/navbat-btn.scss";
 // page 
 @use"../page/singel/singel.scss";
-// @use"../page/single.scss";
+@use"../page/singel/single-video.scss";
+@use"../page/singel/single-product.scss";
 @use "../page/allCategory.scss";
 @use"../page/category.scss";
 @use"../page/about.scss";
 @use"../page/author.scss";
 @use"../page/profile.scss";
+@use"../page/page404.scss";
+@use"../sections/description.scss";
 
 body {
     direction: rtl;
@@ -57,4 +62,8 @@ a {
 
 img , svg{
     vertical-align: auto !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }

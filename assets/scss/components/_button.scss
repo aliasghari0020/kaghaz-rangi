@@ -30,9 +30,14 @@ $roundedBtn: (
     color: #fff;
     display: flex;
     align-items: center;
+    transition: all 0.3s;
     p{
         margin-right:4px;
         margin-bottom: 0px; 
+    }
+    &:hover{
+        background: #fa788b;
+        transition: all 0.3s;
     }
 };
 

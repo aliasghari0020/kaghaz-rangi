@@ -1,12 +1,61 @@
-
-
-@mixin search-desktop(){
+@mixin search-desktop() {
     width: 600px;
     border-radius: 12px;
-    border: 1px solid  #DFE1E6;
-    background:  #FAFBFC;
-    input{
-        background:#FAFBFC;
+    border: 1px solid var(--Neutral-Light-N30, #EBECF0);
+    background: var(--Neutral-Light-N10, #FAFBFC);
+   
+    transition:background-color 0.35s;
+    transition: border-radius 0.35s step-end ;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 92%;
+        height: 1px;
+        background:var(--Neutral-Light-N50, #C1C7D0) ;
+        display: none;
+  
+    }
+    input {
+        background: #FAFBFC;
+
+        color: #253858;
+        &::placeholder{
+            transition: all 0.35s ;
+            color: #8C8C8C;
+        }
+    }
+    #icon-search{
+       path{
+        transition: all 0.35s ;
+       } 
+    }
+    &.action {
+        transition: border-radius 0.1s ;
+        border-radius: 12px 12px 0 0;
+
+        background-color: #fff;
+        border: 1px solid var(--Neutral-Light-N50, #C1C7D0);
+        border-radius: 12px 12px px 0px;
+        border-bottom: none;
+        input {
+            background: #fff;
+
+         
+            &::placeholder{
+                transition: all 0.35s ;
+                color: #253858;
+            }
+        }
+        #icon-search{
+            path{
+                stroke: #253858;
+             transition: all 0.35s ;
+            } 
+         }
+         &::before{
+            display: block;
+         }
     }
 }
 
@@ -96,15 +145,17 @@ $searchbox: 600px;
     width: $searchbox;
     position: absolute;
     right: -1px;
-    top: 51px;
-    z-index: 99;
+    top: 58px;
+    z-index: 1000;
     max-height: 700px;
     overflow-y: auto;
     -ms-overflow-style: none; // for Internet Explorer, Edge
     scrollbar-width: none; // for Firefox
+   
     &::-webkit-scrollbar {
-      display: none; // for Chrome, Safari, and Opera
+        display: none; // for Chrome, Safari, and Opera
     }
+
 }
 
 

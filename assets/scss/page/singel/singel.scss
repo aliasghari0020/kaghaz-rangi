@@ -6,6 +6,10 @@
 
 
 .single {
+    a {
+        color: #1677ff;
+    }
+
     .title {
         h1 {
             @include heading-style(h5)
@@ -30,6 +34,10 @@
         }
     }
 
+    .paragraph {
+        @include paragraph(tablet)
+    }
+
     .info-title {
         .title-image {
             width: 100%;
@@ -46,6 +54,7 @@
                 @include text-body-style(footnote, normal); // normal text footnote
                 color: var(--Neutral-Mid-N100, #7A869A);
             }
+
             .avatar {
                 width: 20px;
                 height: 20px;
@@ -61,6 +70,53 @@
                 }
             }
 
+        }
+    }
+
+    .source-link {
+        border-radius: 4px;
+        border: 1px dashed #D0D6D9;
+
+        p {
+
+            color: var(--Neutral-Dark-Black, #00091A);
+        }
+    }
+
+    .comment-box {
+        @include comeentBox(mobile);
+
+        p {
+            @include text-body-style(footnote, normal); // normal text footnote
+        }
+
+        .tag-name {
+            @include text-body-style(footnote, normal); // normal text footnote
+        }
+
+        .input-container {
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 4px 8px;
+                border: none;
+                background: #fff;
+                @include text-body-style(tag, normal); // normal text tag
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+
+    .image {
+        img {
+            width: 100%;
+            border-radius: 10px;
         }
     }
 
@@ -93,6 +149,7 @@
             .modal-dialog {
                 @include modalWidth(mobile);
                 margin: auto;
+
                 .modal-body {
                     height: auto;
 
@@ -109,9 +166,7 @@
             }
         }
 
-        .paragraph {
-            @include paragraph(tablet)
-        }
+
 
         .slider-box {
             border: 1px solid var(--Neutral-Light-N30, #EBECF0);
@@ -124,6 +179,7 @@
                 justify-content: center;
                 align-items: center;
                 background: var(--Neutral-Light-N20, #F4F5F7);
+                cursor: pointer;
 
                 &.active {
                     width: 48px;
@@ -165,26 +221,46 @@
                 border: 1px dashed #EBF1F5;
             }
         }
-        .comment-box {
-            @include comeentBox(mobile);
-            .input-container{
 
-                button{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 4px 8px;
-                    border: none;
-                    background: #fff;
-                    @include text-body-style(tag,normal ); // normal text tag
-                    svg{
-                        width: 12px;
-                        height: 12px;
-                    }
-                }
-            } 
+
+    }
+
+    .offer-buy {
+        .card-offer-buy {
+            border-radius: 10px;
+            border: 1px solid var(--Neutral-Light-N30, #EBECF0);
+            min-width: 295px;
+            height: 74px;
+            padding: 1px;
+
+            img {
+                aspect-ratio: 16/9;
+                height: 100%;
+                border-radius: 0 10px 10px 0;
+
+            }
+
+            .name {
+                color: var(--Neutral-Dark-Black, #00091A);
+            }
+
+            .pice {
+                color: #6B778C;
+            }
+
+            .btn-offer-buy {
+                width: 46px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #EE4562;
+                color: #fff;
+                border-radius: 4px;
+            }
         }
     }
+
 }
 
 @media screen and (min-width:480px) {
@@ -226,6 +302,23 @@
             }
         }
 
+        .comment-box {
+            @include comeentBox(tablet);
+
+            .input-container {
+                button {
+                    @include text-body-style(footnote, normal); // normal text footnote
+
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                    }
+
+                }
+
+            }
+        }
+
         .content {
             .gallery {
                 .modal-dialog {
@@ -237,23 +330,8 @@
                     @include btnGroup(tablet);
                 }
             }
-
-            .comment-box {
-               @include comeentBox(tablet);
-               .input-container{
-                button{
-                    @include text-body-style(footnote,normal ); // normal text footnote
-                    svg{
-                        width: 16px;
-                        height: 16px;
-                    }
-
-               }
-         
-            }
         }
     }
-}
 
 }
 
@@ -285,6 +363,10 @@
             }
         }
 
+        .paragraph {
+            @include paragraph(desktop)
+        }
+
         .info-title {
             .author-single {
                 p {
@@ -306,6 +388,30 @@
             }
         }
 
+        .comment-box {
+            @include comeentBox(desktop);
+
+            .tag-name {
+                @include text-body-style(caption, normal); // normal text footnote
+            }
+
+            p {
+                @include text-body-style(caption, normal); // normal text footnote
+            }
+
+            .input-container {
+                button {
+
+                    @include text-body-style(caption, normal); // normal text footnote
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
         .content {
             .gallery {
                 .modal-dialog {
@@ -318,24 +424,6 @@
                 }
             }
 
-            .paragraph {
-                @include paragraph(desktop)
-            }
-
-            .comment-box {
-                @include comeentBox(desktop); 
-
-                .input-container{
-                    button{
-
-                        @include text-body-style(caption,normal ); // normal text footnote
-                            svg{
-                                width: 20px;
-                                height: 20px;
-                            }
-                        }
-                   }
-            }
         }
     }
 
