@@ -45,7 +45,7 @@
         .access-box {
             border-radius: 10px;
             border: 1px solid var(--neutral-light-n-20, #F4F5F7);
-
+            transition: all 0.3s;
             li {
                 border-bottom: 1px solid var(--neutral-light-n-20, #F4F5F7);
 
@@ -62,6 +62,11 @@
                     color: var(--neutral-dark-black, #00091A);
                     @include text-body-style(body, normal); // normal text body
 
+                }
+
+                &:hover{
+                    background: var(--neutral-light-n-20, #F4F5F7);
+                    transition: all 0.3s;
                 }
             }
         }
@@ -170,6 +175,13 @@
                 color: var(--neutral-dark-n-900, #091E42);
                 @include text-body-style(small, normal); // bold text small
                 outline: none;
+                border: 1px solid  #FAFBFC;
+                transition: all 0.3s ease;
+                &:focus{
+                    background: #fff;
+                    border: 1px solid #EE4562;
+                    transition: all 0.3s ease;
+                }
             }
 
             .avatar {

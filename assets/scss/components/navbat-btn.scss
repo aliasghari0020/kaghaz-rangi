@@ -1,7 +1,6 @@
 @use './typography' as *;
 
 .navbar-btn {
-    margin-top: 200px;
     position: sticky;
     bottom: 0;
     z-index: 200;
@@ -40,8 +39,15 @@
             border-top: 2px solid #FA7083;
            
           svg{
+           
             path{
                 stroke:#EE4562;
+                fill: #EE4562;
+               
+            }
+            .hall{
+                
+                fill: #fff !important;
             }
           }
         }

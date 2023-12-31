@@ -288,12 +288,17 @@ $discoverCardHeight: (
   transition: box-shadow 0.3s ease;
   padding: 4px;
 }
-.horizontal-card:hover{
-  border: 1px solid var(--Primary-Color-4, #fa788b);
-  background: var(--Neutral-Light-N0, #FFF);
-  box-shadow: 0px 0px 0px 5px #FFF0F0;
-  border-radius: 10px;
-  transition: box-shadow 0.3s ease;
 
 
+
+.single-video{
+  .horizontal-card:hover{
+    border: 1px solid var(--Primary-Color-4, #fa788b);
+    background: var(--Neutral-Light-N0, #FFF);
+    box-shadow: 0px 0px 0px 5px #FFF0F0;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+  
+  
+  }
 }
