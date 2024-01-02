@@ -18555,11 +18555,15 @@ footer .bot p {
   height: 100%;
   border-radius: 50%;
 }
-.single .source-link {
+.single .source-link-container {
+  border-top: 1px solid var(--Neutral-Light-N30, #EBECF0);
+  padding-top: 8px;
+}
+.single .source-link-container .source-link {
   border-radius: 4px;
   border: 1px dashed #D0D6D9;
 }
-.single .source-link p {
+.single .source-link-container .source-link p {
   color: var(--Neutral-Dark-Black, #00091A);
 }
 .single .comment-box {
